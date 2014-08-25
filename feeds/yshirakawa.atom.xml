@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>My blog</title><link href="http://yuta1125tp.github.io/" rel="alternate"></link><link href="http://yuta1125tp.github.io/feeds/yshirakawa.atom.xml" rel="self"></link><id>http://yuta1125tp.github.io/</id><updated>2014-08-25T13:32:00+09:00</updated><entry><title>最初の記事</title><link href="http://yuta1125tp.github.io/first-post.html" rel="alternate"></link><updated>2014-08-25T13:32:00+09:00</updated><author><name>yshirakawa</name></author><id>tag:yuta1125tp.github.io,2014-08-25:first-post.html</id><summary type="html">&lt;h1&gt;ブログをつくった&lt;/h1&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>My blog</title><link href="http://yuta1125tp.github.io/" rel="alternate"></link><link href="http://yuta1125tp.github.io/feeds/yshirakawa.atom.xml" rel="self"></link><id>http://yuta1125tp.github.io/</id><updated>2014-08-25T14:09:20+09:00</updated><entry><title>最初の記事</title><link href="http://yuta1125tp.github.io/zui-chu-noji-shi.html" rel="alternate"></link><updated>2014-08-25T14:09:20+09:00</updated><author><name>yshirakawa</name></author><id>tag:yuta1125tp.github.io,2014-08-25:zui-chu-noji-shi.html</id><summary type="html">&lt;h1&gt;シュタインズ・ゲート耐久をした話&lt;/h1&gt;
+&lt;p&gt;pelicanの挙動がいまいちわからないのでテストの意味も込めて2つ目の記事をちゃっちゃと書いてみる。
+先週末、学部の友人と集まりアニメ鑑賞会を執り行った。今回見たアニメは「シュタインズ・ゲート」去年か一昨年のアニメだったような。
+結構有名になっただけあって面白かった。22時頃に集まりお盆帰省のおみやげを持ち寄り見始めた。2クールものなので結局終わったのは夜が明けてからだった。
+タイムスリップもの特有のバタフライ・エフェクト云々の話は物語の後半になればなるほど込み入ってくるが、僕らの眠気も物語後半になればなるほどきつくなる。
+もう少し早めに集まって見始めればよかった。
+バタフライ・エフェクトを題材にした映画というとその名の通りバタフライ・エフェクトという映画があったような。
+あれもあれで悲しい結末が繰り返される内容だったが、あっちの方が短くまとまっていて好きかもしれない。
+やり直す系だと最近のAll we need is kill？はどうだったんだろう。気になってはいたが、結局見に行けていなかった。
+DVDがでたら借りようか。&lt;/p&gt;</summary><category term="シュタインズ・ゲート"></category><category term="アニメ"></category></entry><entry><title>最初の記事</title><link href="http://yuta1125tp.github.io/first-post.html" rel="alternate"></link><updated>2014-08-25T13:32:00+09:00</updated><author><name>yshirakawa</name></author><id>tag:yuta1125tp.github.io,2014-08-25:first-post.html</id><summary type="html">&lt;h1&gt;ブログをつくった&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;何度かブログを書こうとお思い立った時はあったが、「はてな」しかり、「blogger」しかり全く長続きしない。&lt;/li&gt;
 &lt;li&gt;今度のブログはどれだけ続くだろうか細くでいいから続けられたらいいな。&lt;/li&gt;
