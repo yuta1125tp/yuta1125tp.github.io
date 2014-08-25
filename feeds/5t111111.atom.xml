@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>My blog</title><link href="http://yuta1125tp.github.io/" rel="alternate"></link><link href="http://yuta1125tp.github.io/feeds/5t111111.atom.xml" rel="self"></link><id>http://yuta1125tp.github.io/</id><updated>2013-09-17T22:58:00+02:00</updated><entry><title>最初のPelicanブログ</title><link href="http://yuta1125tp.github.io/my-first-post.html" rel="alternate"></link><updated>2013-09-17T22:58:00+02:00</updated><author><name>5t111111</name></author><id>tag:yuta1125tp.github.io,2013-09-17:my-first-post.html</id><summary type="html">&lt;h1&gt;ハローペリカン&lt;/h1&gt;
+&lt;h2&gt;ペリカン&lt;/h2&gt;
+&lt;h3&gt;ペンギン&lt;/h3&gt;
+&lt;p&gt;Pelicanを使った最初の記事です。&lt;/p&gt;</summary><category term="pelican"></category><category term="python"></category></entry></feed>
