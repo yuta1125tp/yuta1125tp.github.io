@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>My blog</title><link href="http://yuta1125tp.github.io/" rel="alternate"></link><link href="http://yuta1125tp.github.io/feeds/yshirakawa.atom.xml" rel="self"></link><id>http://yuta1125tp.github.io/</id><updated>2014-08-25T13:32:00+02:00</updated><entry><title>最初の記事</title><link href="http://yuta1125tp.github.io/first-post.html" rel="alternate"></link><updated>2014-08-25T13:32:00+02:00</updated><author><name>yshirakawa</name></author><id>tag:yuta1125tp.github.io,2014-08-25:first-post.html</id><summary type="html">&lt;h1&gt;ブログをつくった&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;何度かブログを書こうとお思い立った時はあったが、「はてな」しかり、「blogger」しかり全く長続きしない。&lt;/li&gt;
+&lt;li&gt;今度のブログはどれだけ続くだろうか細くでいいから続けられたらいいな。&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="pelican"></category><category term="python"></category></entry></feed>

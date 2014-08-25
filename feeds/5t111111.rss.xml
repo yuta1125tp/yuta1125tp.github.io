@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>My blog</title><link>http://yuta1125tp.github.io/</link><description></description><atom:link href="http://yuta1125tp.github.io/feeds/5t111111.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 17 Sep 2013 22:58:00 +0200</lastBuildDate><item><title>最初のPelicanブログ</title><link>http://yuta1125tp.github.io/my-first-post.html</link><description>&lt;h1&gt;ハローペリカン&lt;/h1&gt;
-&lt;h2&gt;ペリカン&lt;/h2&gt;
-&lt;h3&gt;ペンギン&lt;/h3&gt;
-&lt;p&gt;Pelicanを使った最初の記事です。&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">5t111111</dc:creator><pubDate>Tue, 17 Sep 2013 22:58:00 +0200</pubDate><guid>tag:yuta1125tp.github.io,2013-09-17:my-first-post.html</guid><category>pelican</category><category>python</category></item></channel></rss>
