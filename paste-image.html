@@ -33,8 +33,149 @@
 <footer class="post-info">
         <span>2014 08 26 (Tue)</span>
 <span>| tags: <a href="http://yuta1125tp.github.io/tag/test.html">test</a></span>
-</footer><!-- /.post-info -->      <p><img alt="flog image1" src="images/flog.png" title="this is a flog image" />
-<img alt="flog image2" src="images/Costa_Rican_Frog_s.jpg" title="this is a flog image2" /></p>
+</footer><!-- /.post-info -->      <p>pelicanの挙動が知りたいのでいろいろ書いてみる。
+まずは、画像の貼り付け。</p>
+<hr />
+<p><img alt="original" src="images/Costa_Rican_Frog_s.jpg" title="origin flog" />
+<img alt="mosaic" src="images/flog.png" title="mosaic flog " /></p>
+<hr />
+<p>上の2つの画像は以前作ったスクリプトの結果。
+左が元の画像で、右が加工したもの。
+数の限られた三角形の重ね合わせ（50個？）で、何とかして元画像との距離を最小化するように学習した。
+学習過程には遺伝的アルゴリズムを用いた。
+（面倒だったのでいんちき臭い内容だったが。）</p>
+<p>上の画像なんかも、もう少しやりようがある気もするがなかなかうまくモザイク化できない。
+どうしても局所解に陥ってしまう。大域最適化の難しさを改めて認識した覚えがある。</p>
+<p>"""python</p>
+<h1>-<em>- coding:utf-8 -</em>-</h1>
+<h1>遺伝的アルゴリズムを用いて限られたポリゴン数で入力に近い画像を生成する</h1>
+<h1>Shirakara Yuta</h1>
+<h1>2013/10/06</h1>
+<p>from PIL import Image
+from PIL import ImageDraw
+import numpy as np
+import random
+import sys # sys.maxintのために
+import copy
+import pickle
+def init_polygon_DNA(max_polygon, n_vertexes):
+    polygon_DNA=[]
+    for i in range(max_polygon):
+    polygon_DNA.append([])
+    color=(0,0,0)
+    polygon_DNA[i].append(color)
+    position=[]
+    for j in range(n_vertexes):
+    position.append((0,0))
+    polygon_DNA[i].append(position)
+    return polygon_DNA</p>
+<div class="highlight"><pre><span class="n">def</span> <span class="n">draw_image_from_DNA</span><span class="p">(</span><span class="n">polygon_dna</span><span class="p">,</span> <span class="n">im_height</span><span class="p">,</span> <span class="n">im_width</span><span class="p">)</span><span class="o">:</span>
+    <span class="n">canvas</span> <span class="o">=</span> <span class="mi">255</span><span class="o">*</span><span class="n">np</span><span class="p">.</span><span class="n">ones</span><span class="p">((</span><span class="n">im_height</span><span class="p">,</span><span class="n">im_width</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span><span class="err">#</span> <span class="n">asarray</span><span class="p">(</span><span class="n">image</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="s">&quot;RGB&quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">in_h</span><span class="p">,</span> <span class="n">in_w</span><span class="p">),</span> <span class="s">&quot;rgb(&quot;</span><span class="o">+</span><span class="n">str</span><span class="p">(</span><span class="n">init</span><span class="p">)</span><span class="o">+</span><span class="s">&quot;,&quot;</span><span class="o">+</span><span class="n">str</span><span class="p">(</span><span class="n">init</span><span class="p">)</span><span class="o">+</span><span class="s">&quot;,&quot;</span><span class="o">+</span><span class="n">str</span><span class="p">(</span><span class="n">init</span><span class="p">)</span><span class="o">+</span><span class="s">&quot;)&quot;</span><span class="p">))</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="n">in</span> <span class="n">range</span><span class="p">(</span><span class="n">len</span><span class="p">(</span><span class="n">polygon_dna</span><span class="p">))</span><span class="o">:</span>
+<span class="n">polygon_image</span> <span class="o">=</span> <span class="n">Image</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="s">&quot;RGB&quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">im_width</span><span class="p">,</span> <span class="n">im_height</span><span class="p">),</span> <span class="s">&quot;rgb(&quot;</span><span class="o">+</span><span class="n">str</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span><span class="o">+</span><span class="s">&quot;,&quot;</span><span class="o">+</span><span class="n">str</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span><span class="o">+</span><span class="s">&quot;,&quot;</span><span class="o">+</span><span class="n">str</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span><span class="o">+</span><span class="s">&quot;)&quot;</span><span class="p">)</span>
+<span class="n">draw</span> <span class="o">=</span> <span class="n">ImageDraw</span><span class="p">.</span><span class="n">Draw</span><span class="p">(</span><span class="n">polygon_image</span><span class="p">)</span>
+</pre></div>
+
+
+<h1>color=(random.randint(0,255),random.randint(0,255),random.randint(0,255))</h1>
+<div class="highlight"><pre><span class="n">draw</span><span class="p">.</span><span class="n">polygon</span><span class="p">(</span><span class="n">polygon_dna</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span> <span class="n">fill</span><span class="o">=</span><span class="s">&quot;rgb&quot;</span><span class="o">+</span><span class="n">str</span><span class="p">(</span><span class="n">polygon_dna</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]))</span>
+</pre></div>
+
+
+<p>polygon_np = np.asarray(polygon_image)
+    canvas = (polygon_np * canvas)/255.0 # 色の重ねあわせたは和でなくて積で表わされるらしい
+    return canvas</p>
+<div class="highlight"><pre><span class="n">def</span> <span class="n">calc_np_diff</span><span class="p">(</span><span class="n">image1_np</span><span class="p">,</span> <span class="n">image2_np</span><span class="p">)</span><span class="o">:</span>
+    <span class="k">return</span> <span class="n">np</span><span class="p">.</span><span class="n">mean</span><span class="p">((</span><span class="n">image1_np</span><span class="o">-</span><span class="n">image2_np</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+
+    <span class="n">def</span> <span class="n">make_result_directory</span><span class="p">()</span><span class="o">:</span>
+        <span class="n">import</span> <span class="n">os</span>
+        <span class="n">import</span> <span class="n">datetime</span>
+        <span class="k">if</span> <span class="n">not</span> <span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">exists</span><span class="p">(</span><span class="s">&quot;./result&quot;</span><span class="p">)</span><span class="o">:</span>
+<span class="n">os</span><span class="p">.</span><span class="n">mkdir</span><span class="p">(</span><span class="s">&quot;./result&quot;</span><span class="p">)</span>
+        <span class="n">day</span> <span class="o">=</span> <span class="n">datetime</span><span class="p">.</span><span class="n">datetime</span><span class="p">.</span><span class="n">now</span><span class="p">()</span>
+        <span class="n">result_path</span> <span class="o">=</span> <span class="s">&quot;./result/%04d_%02d_%02d_%02d_%02d_%02d&quot;</span><span class="o">%</span><span class="p">(</span><span class="n">day</span><span class="p">.</span><span class="n">year</span><span class="p">,</span> <span class="n">day</span><span class="p">.</span><span class="n">month</span><span class="p">,</span> <span class="n">day</span><span class="p">.</span><span class="n">day</span><span class="p">,</span> <span class="n">day</span><span class="p">.</span><span class="n">hour</span><span class="p">,</span> <span class="n">day</span><span class="p">.</span><span class="n">minute</span><span class="p">,</span> <span class="n">day</span><span class="p">.</span><span class="n">second</span><span class="p">)</span>
+</pre></div>
+
+
+<h1>result_path = "./result/"+str(day.year)+str(day.month)+str(day.day)+str(day.hour)+str(day.minute)+str(day.second)</h1>
+<div class="highlight"><pre>        <span class="n">os</span><span class="p">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">result_path</span><span class="p">)</span>
+<span class="k">return</span> <span class="n">result_path</span>
+
+<span class="n">def</span> <span class="n">main</span><span class="p">()</span><span class="o">:</span>
+    <span class="n">result_path</span> <span class="o">=</span> <span class="n">make_result_directory</span><span class="p">()</span>
+<span class="n">src</span> <span class="o">=</span> <span class="n">Image</span><span class="p">.</span><span class="n">open</span><span class="p">(</span><span class="s">&quot;.\Costa_Rican_Frog_s.jpg&quot;</span><span class="p">)</span>
+    <span class="n">src_np</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">src</span><span class="p">)</span>
+    <span class="n">im_height</span> <span class="o">=</span> <span class="n">src</span><span class="p">.</span><span class="n">size</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+    <span class="n">im_width</span> <span class="o">=</span> <span class="n">src</span><span class="p">.</span><span class="n">size</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">print</span> <span class="s">&quot;image_heignt = %d, image_width = %d&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">im_height</span><span class="p">,</span><span class="n">im_width</span><span class="p">)</span>
+    <span class="n">max_polygon</span> <span class="o">=</span> <span class="mi">100</span> <span class="err">#</span> <span class="err">再現するのに用いるポリゴンの数の最大数</span>
+    <span class="n">n_vertexes</span> <span class="o">=</span> <span class="mi">6</span>   <span class="err">#</span> <span class="err">再現に用いるポリゴンの頂点の数</span>
+    <span class="n">n_iterations</span> <span class="o">=</span> <span class="mi">1000000</span> <span class="err">#</span> <span class="err">繰り返し</span>
+</pre></div>
+
+
+<h1>DNAの初期化</h1>
+<div class="highlight"><pre>    <span class="n">polygon_DNA</span> <span class="o">=</span> <span class="n">init_polygon_DNA</span><span class="p">(</span><span class="n">max_polygon</span><span class="p">,</span> <span class="n">n_vertexes</span><span class="p">)</span>
+
+<span class="n">diff_current</span> <span class="o">=</span> <span class="n">sys</span><span class="p">.</span><span class="n">maxint</span>
+</pre></div>
+
+
+<p>current_np = np.zeros((im_width, im_height))
+    diff_min = sys.maxint</p>
+<h1>はじめから全てのポリゴンを用いてしまうとダメかも</h1>
+<h1>ポリゴンをはらないというDNAがあってもいい</h1>
+<h1>ポリゴンの色は薄めな方がいい 0~255のいち用だと暗い色が優勢になってしまう</h1>
+<div class="highlight"><pre><span class="n">print</span> <span class="n">polygon_DNA</span>
+</pre></div>
+
+
+<h1>GAのなかで用いられる輝度値の最小値。画像全体が十分できてくれば暗いものが出現しても全体に影響を与えない？画像を構成する上では暗いポリゴンも必要となる。</h1>
+<div class="highlight"><pre><span class="n">least_intensity</span> <span class="o">=</span> <span class="mi">128</span>
+<span class="n">alpha</span> <span class="o">=</span> <span class="mf">0.01</span>
+<span class="k">for</span> <span class="n">ite</span> <span class="n">in</span> <span class="n">range</span><span class="p">(</span><span class="n">n_iterations</span><span class="p">)</span><span class="o">:</span>
+    <span class="n">least_intensity</span> <span class="o">=</span> <span class="n">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="kt">int</span><span class="p">(</span><span class="mi">128</span><span class="o">-</span><span class="n">alpha</span><span class="o">*</span><span class="n">ite</span><span class="p">))</span>
+</pre></div>
+
+
+<h1>diff_prev = diff_current</h1>
+<div class="highlight"><pre>    <span class="n">polygon_DNA_dist</span> <span class="o">=</span> <span class="n">copy</span><span class="p">.</span><span class="n">deepcopy</span><span class="p">(</span><span class="n">polygon_DNA</span><span class="p">)</span>
+</pre></div>
+
+
+<h1>変化を与えるDNAを選択</h1>
+<div class="highlight"><pre><span class="n">index</span> <span class="o">=</span> <span class="n">random</span><span class="p">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">len</span><span class="p">(</span><span class="n">polygon_DNA</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+
+<p>polygon_DNA_dist[index][0]=(random.randint(least_intensity,255),random.randint(least_intensity,255),random.randint(least_intensity,255))
+    for i in range(n_vertexes):
+        polygon_DNA_dist[index][1][i]=(random.randint(0, im_width), random.randint(0, im_height))</p>
+<div class="highlight"><pre><span class="n">corrent_np</span> <span class="o">=</span> <span class="n">draw_image_from_DNA</span><span class="p">(</span><span class="n">polygon_DNA_dist</span><span class="p">,</span> <span class="n">im_height</span><span class="p">,</span> <span class="n">im_width</span><span class="p">)</span>
+</pre></div>
+
+
+<p>diff_current = calc_np_diff(corrent_np, src_np)
+    if diff_current &lt; diff_min:
+    print "%dth generation : %10.2f -&gt; %10.2f , (%d)" % (ite, diff_min, diff_current, index)
+    diff_min = diff_current
+    polygon_DNA = polygon_DNA_dist
+corrent_im = Image.fromarray(np.uint8(corrent_np))<br />
+    corrent_im.save(result_path+"/"+str(ite)+".png")
+    with open(result_path+"/"+str(ite)+".pickle", "w") as f:
+    pickle.dump(polygon_DNA, f)
+    corrent_im = Image.fromarray(np.uint8(corrent_np))<br />
+corrent_im.show()
+    print polygon_DNA</p>
+<div class="highlight"><pre><span class="k">return</span>
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">&quot;__main__&quot;</span><span class="o">:</span>
+</pre></div>
+
+
+<p>main()
+"""</p>
     </div><!-- /.entry-content -->
 
   </article>
