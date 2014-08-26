@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>My blog</title><link>http://yuta1125tp.github.io/</link><description></description><atom:link href="http://yuta1125tp.github.io/feeds/all.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 26 Aug 2014 13:16:53 +0900</lastBuildDate><item><title>画像の貼り付け</title><link>http://yuta1125tp.github.io/paste-image.html</link><description></description><pubDate>Tue, 26 Aug 2014 13:16:53 +0900</pubDate><guid>tag:yuta1125tp.github.io,2014-08-26:paste-image.html</guid><category>test</category></item><item><title>シュタインズ・ゲート耐久をした話</title><link>http://yuta1125tp.github.io/STEINS-GATE.html</link><description>&lt;p&gt;pelicanの挙動がいまいちわからないのでテストの意味も込めて2つ目の記事をちゃっちゃと書いてみる。
+先週末、学部の友人と集まりアニメ鑑賞会を執り行った。今回見たアニメは「シュタインズ・ゲート」去年か一昨年のアニメだったような。
+結構有名になっただけあって面白かった。22時頃に集まりお盆帰省のおみやげを持ち寄り見始めた。2クールものなので結局終わったのは夜が明けてからだった。
+タイムスリップもの特有のバタフライ・エフェクト云々の話は物語の後半になればなるほど込み入ってくるが、僕らの眠気も物語後半になればなるほどきつくなる。
+もう少し早めに集まって見始めればよかった。
+バタフライ・エフェクトを題材にした映画というとその名の通りバタフライ・エフェクトという映画があったような。
+あれもあれで悲しい結末が繰り返される内容だったが、あっちの方が短くまとまっていて好きかもしれない。
+やり直す系だと最近のAll we need is kill？はどうだったんだろう。気になってはいたが、結局見に行けていなかった。
+DVDがでたら借りようか。&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">yshirakawa</dc:creator><pubDate>Mon, 25 Aug 2014 14:44:56 +0900</pubDate><guid>tag:yuta1125tp.github.io,2014-08-25:STEINS-GATE.html</guid><category>シュタインズ・ゲート</category><category>アニメ</category></item><item><title>最初の記事</title><link>http://yuta1125tp.github.io/first-post.html</link><description>&lt;h1&gt;ブログをつくった&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;何度かブログを書こうとお思い立った時はあったが、「はてな」しかり、「blogger」しかり全く長続きしない。&lt;/li&gt;
+&lt;li&gt;今度のブログはどれだけ続くだろうか細くでいいから続けられたらいいな。&lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">yshirakawa</dc:creator><pubDate>Mon, 25 Aug 2014 13:32:00 +0900</pubDate><guid>tag:yuta1125tp.github.io,2014-08-25:first-post.html</guid><category>pelican</category><category>python</category></item></channel></rss>
