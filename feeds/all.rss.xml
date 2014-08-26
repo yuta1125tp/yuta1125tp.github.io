@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>My blog</title><link>http://yuta1125tp.github.io/</link><description></description><atom:link href="http://yuta1125tp.github.io/feeds/all.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 26 Aug 2014 14:37:31 +0900</lastBuildDate><item><title>画像の貼り付け</title><link>http://yuta1125tp.github.io/paste-image.html</link><description>&lt;p&gt;pelicanの挙動が知りたいのでいろいろ書いてみる。
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>My blog</title><link>http://yuta1125tp.github.io/</link><description></description><atom:link href="http://yuta1125tp.github.io/feeds/all.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 26 Aug 2014 14:39:44 +0900</lastBuildDate><item><title>画像の貼り付け</title><link>http://yuta1125tp.github.io/paste-image.html</link><description>&lt;p&gt;pelicanの挙動が知りたいのでいろいろ書いてみる。
 まずは、画像の貼り付け。&lt;/p&gt;
 &lt;hr /&gt;
 &lt;p&gt;&lt;img alt="original" src="images/Costa_Rican_Frog_s.jpg" title="origin flog" /&gt;
@@ -12,7 +12,7 @@
 （面倒だったのでいんちき臭い内容だったが。）&lt;/p&gt;
 &lt;p&gt;上の画像なんかも、もう少しやりようがある気もするがなかなかうまくモザイク化できない。
 どうしても局所解に陥ってしまう。大域最適化の難しさを改めて認識した覚えがある。&lt;/p&gt;
-&lt;p&gt;"""python&lt;/p&gt;
+&lt;p&gt;'''python&lt;/p&gt;
 &lt;h1&gt;-&lt;em&gt;- coding:utf-8 -&lt;/em&gt;-&lt;/h1&gt;
 &lt;h1&gt;遺伝的アルゴリズムを用いて限られたポリゴン数で入力に近い画像を生成する&lt;/h1&gt;
 &lt;h1&gt;Shirakara Yuta&lt;/h1&gt;
@@ -141,7 +141,7 @@ corrent_im.show()
 
 
 &lt;p&gt;main()
-"""&lt;/p&gt;</description><pubDate>Tue, 26 Aug 2014 14:37:31 +0900</pubDate><guid>tag:yuta1125tp.github.io,2014-08-26:paste-image.html</guid><category>test</category></item><item><title>シュタインズ・ゲート耐久をした話</title><link>http://yuta1125tp.github.io/STEINS-GATE.html</link><description>&lt;p&gt;pelicanの挙動がいまいちわからないのでテストの意味も込めて2つ目の記事をちゃっちゃと書いてみる。
+'''&lt;/p&gt;</description><pubDate>Tue, 26 Aug 2014 14:39:44 +0900</pubDate><guid>tag:yuta1125tp.github.io,2014-08-26:paste-image.html</guid><category>test</category></item><item><title>シュタインズ・ゲート耐久をした話</title><link>http://yuta1125tp.github.io/STEINS-GATE.html</link><description>&lt;p&gt;pelicanの挙動がいまいちわからないのでテストの意味も込めて2つ目の記事をちゃっちゃと書いてみる。
 先週末、学部の友人と集まりアニメ鑑賞会を執り行った。今回見たアニメは「シュタインズ・ゲート」去年か一昨年のアニメだったような。
 結構有名になっただけあって面白かった。22時頃に集まりお盆帰省のおみやげを持ち寄り見始めた。2クールものなので結局終わったのは夜が明けてからだった。
 タイムスリップもの特有のバタフライ・エフェクト云々の話は物語の後半になればなるほど込み入ってくるが、僕らの眠気も物語後半になればなるほどきつくなる。
