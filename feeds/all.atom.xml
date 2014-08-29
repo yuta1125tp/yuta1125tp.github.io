@@ -10,7 +10,7 @@
 &lt;p&gt;以下Gistより&lt;/p&gt;
 &lt;script src="https://gist.github.com/yuta1125tp/4c7f15829567a415da9e.js"&gt;&lt;/script&gt;
 
-&lt;p&gt;こんな感じでよろしいでしょうか。&lt;/p&gt;</summary><category term="code"></category><category term="python"></category><category term="pylab"></category></entry><entry><title>コードの貼り付け</title><link href="http://yuta1125tp.github.io/paste-code-test.html" rel="alternate"></link><updated>2014-08-27T00:00:00+09:00</updated><author><name></name></author><id>tag:yuta1125tp.github.io,2014-08-27:paste-code-test.html</id><summary type="html">&lt;p&gt;pelicanの挙動が知りたいのでいろいろ書いてみる。
+&lt;p&gt;こんな感じでよろしいでしょうか。&lt;/p&gt;</summary><category term="code"></category><category term="python"></category><category term="pylab"></category></entry><entry><title>コードの貼り付け</title><link href="http://yuta1125tp.github.io/paste-code-test.html" rel="alternate"></link><updated>2014-08-27T00:00:00+09:00</updated><author><name>yshirakawa</name></author><id>tag:yuta1125tp.github.io,2014-08-27:paste-code-test.html</id><summary type="html">&lt;p&gt;pelicanの挙動が知りたいのでいろいろ書いてみる。
 今回はコードの貼り付け。&lt;/p&gt;
 &lt;p&gt;コードの書き方がわからないような時、グーグル先生に尋ねるとだいたい何かしらヒントを得られる。
 場合によってはまるまる流用できるようなこともある。&lt;/p&gt;
@@ -28,7 +28,7 @@
 
 &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;__name__&lt;/span&gt;&lt;span class="o"&gt;==&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;__main__&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
     &lt;span class="n"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</summary><category term="code"></category><category term="test"></category></entry><entry><title>画像の貼り付け</title><link href="http://yuta1125tp.github.io/paste-image.html" rel="alternate"></link><updated>2014-08-26T00:00:00+09:00</updated><author><name></name></author><id>tag:yuta1125tp.github.io,2014-08-26:paste-image.html</id><summary type="html">&lt;p&gt;pelicanの挙動が知りたいのでいろいろ書いてみる。
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="code"></category><category term="test"></category></entry><entry><title>画像の貼り付け</title><link href="http://yuta1125tp.github.io/paste-image.html" rel="alternate"></link><updated>2014-08-26T00:00:00+09:00</updated><author><name>yshirakawa</name></author><id>tag:yuta1125tp.github.io,2014-08-26:paste-image.html</id><summary type="html">&lt;p&gt;pelicanの挙動が知りたいのでいろいろ書いてみる。
 まずは、画像の貼り付け。&lt;/p&gt;
 &lt;hr /&gt;
 &lt;p&gt;&lt;img alt="original" src="images/Costa_Rican_Frog_s.jpg" title="origin flog" /&gt;

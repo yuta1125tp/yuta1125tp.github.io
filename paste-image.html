@@ -1,40 +1,46 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-          <title>My blog</title>
         <meta charset="utf-8" />
-        <link href="http://yuta1125tp.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="My blog Full Atom Feed" />
-        <link href="http://yuta1125tp.github.io/feeds/test.atom.xml" type="application/atom+xml" rel="alternate" title="My blog Categories Atom Feed" />
+        <title>画像の貼り付け</title>
+        <link rel="stylesheet" href="http://yuta1125tp.github.io/theme/css/main.css" />
+        <link href="http://yuta1125tp.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="My blog Atom Feed" />
 
-
-
-    <meta name="tags" contents="test" />
-
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
 </head>
 
 <body id="index" class="home">
         <header id="banner" class="body">
-                <h1><a href="http://yuta1125tp.github.io/">My blog <strong></strong></a></h1>
+                <h1><a href="http://yuta1125tp.github.io/">My blog </a></h1>
+                <nav><ul>
+                    <li class="active"><a href="http://yuta1125tp.github.io/category/test.html">test</a></li>
+                    <li><a href="http://yuta1125tp.github.io/category/python.html">python</a></li>
+                    <li><a href="http://yuta1125tp.github.io/category/pelican.html">pelican</a></li>
+                    <li><a href="http://yuta1125tp.github.io/category/anime.html">anime</a></li>
+                </ul></nav>
         </header><!-- /#banner -->
-        <nav id="menu"><ul>
-        </ul></nav><!-- /#menu -->
 <section id="content" class="body">
-  <header>
-    <h2 class="entry-title">
-      <a href="http://yuta1125tp.github.io/paste-image.html" rel="bookmark"
-         title="Permalink to 画像の貼り付け">画像の貼り付け</a></h2>
- 
-  </header>
-  <footer class="post-info">
-    <abbr class="published" title="2014-08-26T00:00:00">
-      2014 08 26 (Tue)
-    </abbr>
-    <address class="vcard author">
-      By           <a class="url fn" href="http://yuta1125tp.github.io/author/.html"></a>
-    </address>
-  </footer><!-- /.post-info -->
-  <div class="entry-content">
-    <p>pelicanの挙動が知りたいのでいろいろ書いてみる。
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="http://yuta1125tp.github.io/paste-image.html" rel="bookmark"
+           title="Permalink to 画像の貼り付け">画像の貼り付け</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2014-08-26T00:00:00">
+                Published: 2014 08 26 (Tue)
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="http://yuta1125tp.github.io/author/yshirakawa.html">yshirakawa</a>
+        </address>
+<p>In <a href="http://yuta1125tp.github.io/category/test.html">test</a>. </p>
+<p>tags: <a href="http://yuta1125tp.github.io/tag/test.html">test</a> </p>
+</footer><!-- /.post-info -->      <p>pelicanの挙動が知りたいのでいろいろ書いてみる。
 まずは、画像の貼り付け。</p>
 <hr />
 <p><img alt="original" src="images/Costa_Rican_Frog_s.jpg" title="origin flog" />
@@ -49,13 +55,38 @@
 どうしても局所解に陥ってしまう。大域最適化の難しさを改めて認識した覚えがある。</p>
 <p>アイデアというか丸パクリの元は<a href="http://rogeralsing.com/2008/12/07/genetic-programming-evolution-of-mona-lisa/">こ</a><a href="http://alteredqualia.com/visualization/evolve/">こ</a>。</p>
 <p>以下にソースコードを貼りたかったが力尽きた。</p>
-  </div><!-- /.entry-content -->
+    </div><!-- /.entry-content -->
+
+  </article>
 </section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>blogroll</h2>
+                        <ul>
+                            <li><a href="http://getpelican.com/">Pelican</a></li>
+                            <li><a href="http://python.org/">Python.org</a></li>
+                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://yuta1125tp.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+
+                            <li><a href="https://twitter.com/kawa1125tp">Twitter</a></li>
+                            <li><a href="https://twitter.com/kawa1125bot">Twitter(bot)</a></li>
+                            <li><a href="http://github.com/yuta1125tp">Github</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
         <footer id="contentinfo" class="body">
                 <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
-                which takes great advantage of <a href="http://python.org">Python</a>.
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
                 </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
         </footer><!-- /#contentinfo -->
+
 </body>
 </html>
