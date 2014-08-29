@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
         <meta charset="utf-8" />
-        <title>My blog</title>
+        <title>My blog - python</title>
         <link rel="stylesheet" href="http://yuta1125tp.github.io/theme/css/main.css" />
         <link href="http://yuta1125tp.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="My blog Atom Feed" />
 
@@ -16,18 +16,36 @@
                 <h1><a href="http://yuta1125tp.github.io/">My blog </a></h1>
                 <nav><ul>
                     <li><a href="http://yuta1125tp.github.io/category/test.html">test</a></li>
-                    <li><a href="http://yuta1125tp.github.io/category/python.html">python</a></li>
+                    <li class="active"><a href="http://yuta1125tp.github.io/category/python.html">python</a></li>
                     <li><a href="http://yuta1125tp.github.io/category/pelican.html">pelican</a></li>
                     <li><a href="http://yuta1125tp.github.io/category/anime.html">anime</a></li>
                 </ul>
                 </nav>
         </header><!-- /#banner -->
-<ul>
-    <li><a href="http://yuta1125tp.github.io/category/test.html">test</a></li>
-    <li><a href="http://yuta1125tp.github.io/category/python.html">python</a></li>
-    <li><a href="http://yuta1125tp.github.io/category/pelican.html">pelican</a></li>
-    <li><a href="http://yuta1125tp.github.io/category/anime.html">anime</a></li>
-</ul>
+
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="http://yuta1125tp.github.io/confmat-visualize.html">混同行列の可視化</a></h1>
+<footer class="post-info">
+        <span>2014 08 29 (Fri)</span>
+<span>| tags: <a href="http://yuta1125tp.github.io/tag/code-python-pylab.html">code python pylab</a></span>
+</footer><!-- /.post-info --><p>混同行列ってClassificationの結果を可視化する際に使いやすいのだけど、
+いろいろ情報を載せようと思うと、毎回どう書いたらいいか悩んでしまう。</p>
+<p>備忘録の意味も込めてメモ。</p>
+<p>コード中にもあるようにメインの部分はStackOverflowの回答に沿っている。
+混同行列の図中に濃淡だけではなく具体的な数値も載ってるのが使いやすいポイント。
+元の回答はjetのColormapだったが、そこはGrayScaleに変換。
+それに伴い、数字の色を変化させたのは私の寄与。</p>
+<p>以下Gistより</p>
+<script src="https://gist.github.com/yuta1125tp/4c7f15829567a415da9e.js"></script>
+
+<p>こんな感じでよろしいでしょうか。</p>                </article>
+<p class="paginator">
+    Page 1 / 1
+</p>
+            </aside><!-- /#featured -->
+            </ol><!-- /#posts-list -->
+            </section><!-- /#content -->
         <section id="extras" class="body">
                 <div class="blogroll">
                         <h2>blogroll</h2>
