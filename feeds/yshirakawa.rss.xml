@@ -10,7 +10,7 @@
 &lt;p&gt;以下Gistより&lt;/p&gt;
 &lt;script src="https://gist.github.com/yuta1125tp/4c7f15829567a415da9e.js"&gt;&lt;/script&gt;
 
-&lt;p&gt;こんな感じでよろしいでしょうか。&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">yshirakawa</dc:creator><pubDate>Fri, 29 Aug 2014 00:00:00 +0900</pubDate><guid>tag:yuta1125tp.github.io,2014-08-29:confmat-visualize.html</guid><category>code python pylab</category></item><item><title>シュタインズ・ゲート耐久をした話</title><link>http://yuta1125tp.github.io/STEINS-GATE.html</link><description>&lt;p&gt;pelicanの挙動がいまいちわからないのでテストの意味も込めて2つ目の記事をちゃっちゃと書いてみる。
+&lt;p&gt;こんな感じでよろしいでしょうか。&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">yshirakawa</dc:creator><pubDate>Fri, 29 Aug 2014 00:00:00 +0900</pubDate><guid>tag:yuta1125tp.github.io,2014-08-29:confmat-visualize.html</guid><category>code</category><category>python</category><category>pylab</category></item><item><title>シュタインズ・ゲート耐久をした話</title><link>http://yuta1125tp.github.io/STEINS-GATE.html</link><description>&lt;p&gt;pelicanの挙動がいまいちわからないのでテストの意味も込めて2つ目の記事をちゃっちゃと書いてみる。
 先週末、学部の友人と集まりアニメ鑑賞会を執り行った。今回見たアニメは「シュタインズ・ゲート」去年か一昨年のアニメだったような。
 結構有名になっただけあって面白かった。22時頃に集まりお盆帰省のおみやげを持ち寄り見始めた。2クールものなので結局終わったのは夜が明けてからだった。
 タイムスリップもの特有のバタフライ・エフェクト云々の話は物語の後半になればなるほど込み入ってくるが、僕らの眠気も物語後半になればなるほどきつくなる。

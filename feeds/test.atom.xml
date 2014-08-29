@@ -17,7 +17,7 @@
 
 &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;__name__&lt;/span&gt;&lt;span class="o"&gt;==&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;__main__&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
     &lt;span class="n"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</summary><category term="code test"></category></entry><entry><title>画像の貼り付け</title><link href="http://yuta1125tp.github.io/paste-image.html" rel="alternate"></link><updated>2014-08-26T00:00:00+09:00</updated><author><name></name></author><id>tag:yuta1125tp.github.io,2014-08-26:paste-image.html</id><summary type="html">&lt;p&gt;pelicanの挙動が知りたいのでいろいろ書いてみる。
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="code"></category><category term="test"></category></entry><entry><title>画像の貼り付け</title><link href="http://yuta1125tp.github.io/paste-image.html" rel="alternate"></link><updated>2014-08-26T00:00:00+09:00</updated><author><name></name></author><id>tag:yuta1125tp.github.io,2014-08-26:paste-image.html</id><summary type="html">&lt;p&gt;pelicanの挙動が知りたいのでいろいろ書いてみる。
 まずは、画像の貼り付け。&lt;/p&gt;
 &lt;hr /&gt;
 &lt;p&gt;&lt;img alt="original" src="images/Costa_Rican_Frog_s.jpg" title="origin flog" /&gt;
