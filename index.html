@@ -1,35 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-        <title>My blog</title>
-        <link rel="shortcut icon" href="http://yuta1125tp.github.io/favicon.ico" />
-<link href="http://yuta1125tp.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="My blog Atom Feed" />
+<!doctype html>
+<html lang="">	
+<head>
+	<meta charset="utf-8"/>
+	<title>My blog</title>	
+	<meta name="author" content="Yuta Shirakawa">
+	
 
-        <link rel="stylesheet" href="http://yuta1125tp.github.io/theme/css/screen.css" type="text/css" />
-        <link rel="stylesheet" href="http://yuta1125tp.github.io/theme/css/pygments.css" type="text/css" />
+	<link rel="top" href="#" /><link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic,400italic,600italic|Source+Code+Pro' rel='stylesheet' type='text/css'></link>
+	<link rel="stylesheet" href="http://yuta1125tp.github.io/theme/css/main.css" type="text/css" />
+		
+
+    <link href="http://yuta1125tp.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="My blog Atom Feed" />
+</head>
+	
+<body>
+
+    <div class="container">
+	  
+	  <header role="banner">
+	    <div class="feeds">
+	        <a href="http://yuta1125tp.github.io/feeds/all.atom.xml" rel="alternate"><img src="/theme/images/icons/feed-32px.png" alt="atom feed"/></a>
+	    </div>
+		<a href="http://yuta1125tp.github.io" class="title">My blog</a>
+      </header>
+	
+	  <div class="wrapper">
+
+		  <div role="main" class="content">
 
 
-    </head>
-    <body>
-<div id="header">
-            <ul id="nav">
-                <li class="selected"><a href="http://yuta1125tp.github.io">Home</a></li>
-<li><a href="http://yuta1125tp.github.io/archives.html">Archives</a></li>
-            </ul>
-            <div class="header_box">
-                <h1><a href="http://yuta1125tp.github.io">My blog</a></h1>
-            </div>
-        </div>
-        <div id="wrapper">
-            <div id="content">
-                <h4 class="date">Aug 29, 2014</h4>
-                <div class="post">
-<h2 class="title">
-                        <a href="http://yuta1125tp.github.io/confmat-visualize.html" rel="bookmark" title="Permanent Link to &quot;混同行列の可視化&quot;">混同行列の可視化</a>
-                    </h2>
 
-                    <p>混同行列ってClassificationの結果を可視化する際に使いやすいのだけど、
+      <article>
+        <h1><a href="http://yuta1125tp.github.io/confmat-visualize.html">混同行列の可視化</a></h1>
+        <p>混同行列ってClassificationの結果を可視化する際に使いやすいのだけど、
 いろいろ情報を載せようと思うと、毎回どう書いたらいいか悩んでしまう。</p>
 <p>備忘録の意味も込めてメモ。</p>
 <p>コード中にもあるようにメインの部分はStackOverflowの回答に沿っている。
@@ -40,143 +43,88 @@
 <script src="https://gist.github.com/yuta1125tp/4c7f15829567a415da9e.js"></script>
 
 <p>こんな感じでよろしいでしょうか。</p>
+      </article>
 
-                    <div class="clear"></div>
-                    <div class="info">
-<a href="http://yuta1125tp.github.io/confmat-visualize.html">posted at 01:27 2014</a>&nbsp;&middot;&nbsp;<a href="http://yuta1125tp.github.io/category/python.html" rel="tag">python</a>
-                        <div class="tags">
-                            <a href="http://yuta1125tp.github.io/tag/code-python-pylab.html">code python pylab</a>
-                        </div>
-                    </div>
-                    <div class="clear"></div>
-                </div>
+      <hr />
 
-                <h4 class="date">Aug 27, 2014</h4>
-                <div class="post">
-<h2 class="title">
-                        <a href="http://yuta1125tp.github.io/paste-code-test.html" rel="bookmark" title="Permanent Link to &quot;コードの貼り付け&quot;">コードの貼り付け</a>
-                    </h2>
+        <div>
+          <h3>Last posts</h3>
+          <ol class="archive">
+    
 
-                    <p>pelicanの挙動が知りたいのでいろいろ書いてみる。
-今回はコードの貼り付け。</p>
-<p>コードの書き方がわからないような時、グーグル先生に尋ねるとだいたい何かしらヒントを得られる。
-場合によってはまるまる流用できるようなこともある。</p>
-<p>正直とても助かっているので、微力ながら力添えできるよう僕も何かしらアウトプットしていきたい。</p>
-<p>以下貼り付けテスト</p>
-<div class="highlight"><pre><span class="cp">#-*- coding:utf-8 -*-</span>
-<span class="s">&quot;&quot;&quot;</span>
-<span class="n">this</span> <span class="n">is</span> <span class="n">a</span> <span class="n">test</span> <span class="n">code</span><span class="p">.</span>
-<span class="s">&quot;&quot;&quot;</span>
-<span class="n">def</span> <span class="n">sayHello</span><span class="p">()</span><span class="o">:</span>
-    <span class="n">print</span> <span class="s">&quot;Hello python!&quot;</span>
 
-<span class="n">def</span> <span class="n">main</span><span class="p">()</span><span class="o">:</span>
-    <span class="n">sayHello</span><span class="p">()</span>
+      <li>
+<a href="http://yuta1125tp.github.io/paste-code-test.html" rel="bookmark" title="Permalink to コードの貼り付け">コードの貼り付け</a>
+  <time datetime="2014-08-27T13:25:56.690051" pubdate>2014 08 27 (Wed)</time>
+<p class="tags">tags: <a href="http://yuta1125tp.github.io/tag/code-test.html">code test</a></p></a>      </li>
 
-<span class="k">if</span> <span class="n">__name__</span><span class="o">==</span><span class="s">&quot;__main__&quot;</span><span class="o">:</span>
-    <span class="n">main</span><span class="p">()</span>
-</pre></div>
 
-                    <div class="clear"></div>
-                    <div class="info">
-<a href="http://yuta1125tp.github.io/paste-code-test.html">posted at 01:25 2014</a>&nbsp;&middot;&nbsp;<a href="http://yuta1125tp.github.io/category/test.html" rel="tag">test</a>
-                        <div class="tags">
-                            <a href="http://yuta1125tp.github.io/tag/code-test.html">code test</a>
-                        </div>
-                    </div>
-                    <div class="clear"></div>
-                </div>
+      <li>
+<a href="http://yuta1125tp.github.io/paste-image.html" rel="bookmark" title="Permalink to 画像の貼り付け">画像の貼り付け</a>
+  <time datetime="2014-08-26T14:45:42.829219" pubdate>2014 08 26 (Tue)</time>
+<p class="tags">tags: <a href="http://yuta1125tp.github.io/tag/test.html">test</a></p></a>      </li>
 
-                <h4 class="date">Aug 26, 2014</h4>
-                <div class="post">
-<h2 class="title">
-                        <a href="http://yuta1125tp.github.io/paste-image.html" rel="bookmark" title="Permanent Link to &quot;画像の貼り付け&quot;">画像の貼り付け</a>
-                    </h2>
 
-                    <p>pelicanの挙動が知りたいのでいろいろ書いてみる。
-まずは、画像の貼り付け。</p>
-<hr />
-<p><img alt="original" src="images/Costa_Rican_Frog_s.jpg" title="origin flog" />
-<img alt="mosaic" src="images/flog.png" title="mosaic flog " /></p>
-<hr />
-<p>上の2つの画像は以前作ったスクリプトの結果。
-左が元の画像で、右が加工したもの。
-数の限られた三角形の重ね合わせ（50個？）で、何とかして元画像との距離を最小化するように学習した。
-学習過程には遺伝的アルゴリズムを用いた。
-（面倒だったのでいんちき臭い内容だったが。）</p>
-<p>上の画像なんかも、もう少しやりようがある気もするがなかなかうまくモザイク化できない。
-どうしても局所解に陥ってしまう。大域最適化の難しさを改めて認識した覚えがある。</p>
-<p>アイデアというか丸パクリの元は<a href="http://rogeralsing.com/2008/12/07/genetic-programming-evolution-of-mona-lisa/">こ</a><a href="http://alteredqualia.com/visualization/evolve/">こ</a>。</p>
-<p>以下にソースコードを貼りたかったが力尽きた。</p>
+      <li>
+<a href="http://yuta1125tp.github.io/STEINS-GATE.html" rel="bookmark" title="Permalink to シュタインズ・ゲート耐久をした話">シュタインズ・ゲート耐久をした話</a>
+  <time datetime="2014-08-26T13:40:41.242149" pubdate>2014 08 26 (Tue)</time>
+<p class="tags">tags: <a href="http://yuta1125tp.github.io/tag/shiyutainzugeto.html">シュタインズ・ゲート</a><a href="http://yuta1125tp.github.io/tag/anime.html">アニメ</a></p></a>      </li>
 
-                    <div class="clear"></div>
-                    <div class="info">
-<a href="http://yuta1125tp.github.io/paste-image.html">posted at 02:45 2014</a>&nbsp;&middot;&nbsp;<a href="http://yuta1125tp.github.io/category/test.html" rel="tag">test</a>
-                        <div class="tags">
-                            <a href="http://yuta1125tp.github.io/tag/test.html">test</a>
-                        </div>
-                    </div>
-                    <div class="clear"></div>
-                </div>
 
-                <div class="post">
-<h2 class="title">
-                        <a href="http://yuta1125tp.github.io/STEINS-GATE.html" rel="bookmark" title="Permanent Link to &quot;シュタインズ・ゲート耐久をした話&quot;">シュタインズ・ゲート耐久をした話</a>
-                    </h2>
+      <li>
+<a href="http://yuta1125tp.github.io/first-post.html" rel="bookmark" title="Permalink to 最初の記事">最初の記事</a>
+  <time datetime="2014-08-25T13:32:00" pubdate>2014 08 25 (Mon)</time>
+<p class="tags">tags: <a href="http://yuta1125tp.github.io/tag/pelican.html">pelican</a><a href="http://yuta1125tp.github.io/tag/python.html">python</a></p></a>      </li>
 
-                    <p>pelicanの挙動がいまいちわからないのでテストの意味も込めて2つ目の記事をちゃっちゃと書いてみる。
-先週末、学部の友人と集まりアニメ鑑賞会を執り行った。今回見たアニメは「シュタインズ・ゲート」去年か一昨年のアニメだったような。
-結構有名になっただけあって面白かった。22時頃に集まりお盆帰省のおみやげを持ち寄り見始めた。2クールものなので結局終わったのは夜が明けてからだった。
-タイムスリップもの特有のバタフライ・エフェクト云々の話は物語の後半になればなるほど込み入ってくるが、僕らの眠気も物語後半になればなるほどきつくなる。
-もう少し早めに集まって見始めればよかった。
-バタフライ・エフェクトを題材にした映画というとその名の通りバタフライ・エフェクトという映画があったような。
-あれもあれで悲しい結末が繰り返される内容だったが、あっちの方が短くまとまっていて好きかもしれない。
-やり直す系だと最近のAll we need is kill？はどうだったんだろう。気になってはいたが、結局見に行けていなかった。
-DVDがでたら借りようか。</p>
 
-                    <div class="clear"></div>
-                    <div class="info">
-<a href="http://yuta1125tp.github.io/STEINS-GATE.html">posted at 01:40 2014</a>&nbsp;&middot;&nbsp;<a href="http://yuta1125tp.github.io/category/anime.html" rel="tag">anime</a>
-                        <div class="tags">
-                            <a href="http://yuta1125tp.github.io/tag/shiyutainzugeto.html">シュタインズ・ゲート</a>
-                            <a href="http://yuta1125tp.github.io/tag/anime.html">アニメ</a>
-                        </div>
-                    </div>
-                    <div class="clear"></div>
-                </div>
-
-                <h4 class="date">Aug 25, 2014</h4>
-                <div class="post">
-<h2 class="title">
-                        <a href="http://yuta1125tp.github.io/first-post.html" rel="bookmark" title="Permanent Link to &quot;最初の記事&quot;">最初の記事</a>
-                    </h2>
-
-                    <h1>ブログをつくった</h1>
-<ul>
-<li>何度かブログを書こうとお思い立った時はあったが、「はてな」しかり、「blogger」しかり全く長続きしない。</li>
-<li>今度のブログはどれだけ続くだろうか細くでいいから続けられたらいいな。</li>
-</ul>
-
-                    <div class="clear"></div>
-                    <div class="info">
-<a href="http://yuta1125tp.github.io/first-post.html">posted at 01:32 2014</a>&nbsp;&middot;&nbsp;<a href="http://yuta1125tp.github.io/category/pelican.html" rel="tag">pelican</a>
-                        <div class="tags">
-                            <a href="http://yuta1125tp.github.io/tag/pelican.html">pelican</a>
-                            <a href="http://yuta1125tp.github.io/tag/python.html">python</a>
-                        </div>
-                    </div>
-                    <div class="clear"></div>
-                </div>
-
-                <div class="clear"></div>
-                <div id="footer">
-                    <p>
-                    Mockingbird theme by <a href="http://nevanscott.com/">Nevan Scott</a>
-                    &middot;
-                    <a class="atom" href="http://yuta1125tp.github.io/feeds/all.atom.xml">Feed</a>
-                </div>
-            </div>
-            <div class="clear"></div>
+          </ol>
         </div>
-    </body>
+
+		  </div>	
+		  
+		  <div class="sidebar">
+
+	        <nav>
+	          <h2>Categories</h2>
+	          <ul>
+	              <li ><a href="http://yuta1125tp.github.io/category/test.html">test</a></li>
+	              <li ><a href="http://yuta1125tp.github.io/category/python.html">python</a></li>
+	              <li ><a href="http://yuta1125tp.github.io/category/pelican.html">pelican</a></li>
+	              <li ><a href="http://yuta1125tp.github.io/category/anime.html">anime</a></li>
+	          </ul>
+	        </nav>
+
+	          <aside>
+	          <h2>Social</h2>
+			    <ul class="social">
+				  <li><a href="https://twitter.com/kawa1125tp">Twitter</a><i></i></li>
+				  <li><a href="https://twitter.com/kawa1125bot">Twitter(bot)</a><i></i></li>
+				  <li><a href="http://github.com/yuta1125tp">Github</a><i></i></li>
+			    </ul>
+			  </aside>
+
+	          <aside>
+	            <h2>Blogroll</h2>
+	            <ul>
+	                <li><a href="http://getpelican.com/">Pelican</a></li>
+	                <li><a href="http://python.org/">Python.org</a></li>
+	                <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+	            </ul>
+	          </aside>
+
+		  </div>
+
+	  </div>
+
+      <footer>
+		<p role="contentinfo">
+		  © 2013 Yuta Shirakawa - Proudly powered by <a href="http://alexis.notmyidea.org/pelican/">pelican</a>. Theme <a href="https://github.com/fle/pelican-simplegrey">pelican-simplegrey</a>.
+    	</p>
+
+	  </footer>	
+
+	</div>
+	
+
+</body>
 </html>
