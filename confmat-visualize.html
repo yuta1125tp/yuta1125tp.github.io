@@ -1,42 +1,47 @@
-<!DOCTYPE html>
-<html lang="ja">
+<!doctype html>
+<html lang="">	
 <head>
-          <title>My blog</title>
-        <meta charset="utf-8" />
-        <link href="http://yuta1125tp.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="My blog Full Atom Feed" />
-        <link href="http://yuta1125tp.github.io/feeds/python.atom.xml" type="application/atom+xml" rel="alternate" title="My blog Categories Atom Feed" />
+	<meta charset="utf-8"/>
+	<title>混同行列の可視化 - My blog</title>	
+	<meta name="author" content="Yuta Shirakawa">
+	
+
+	<meta name="description" content="summary: confmatの可視化 混同行列ってClassificationの結果を可視化する際に使いやすいのだけど、 いろいろ情報を載せようと思うと、毎回どう書いたらいいか悩んでしまう。 備忘録の意味も込めてメモ。 コード中にもあるようにメインの部分はStackOverflowの回答に沿っている。 混同行列の図中に濃淡だけではなく具体的な数値も載ってるのが使いやすいポイント。 元の回答はjetのColormapだったが、そこはGrayScaleに変換。 それに伴い、数字の色を変化させたのは私の寄与。 以下Gistより こんな感じでよろしいでしょうか。">
 
 
+	<link rel="top" href="#" /><link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic,400italic,600italic|Source+Code+Pro' rel='stylesheet' type='text/css'></link>
+	<link rel="stylesheet" href="http://yuta1125tp.github.io/theme/css/main.css" type="text/css" />
+		
 
-    <meta name="tags" contents="code" />
-    <meta name="tags" contents="python" />
-    <meta name="tags" contents="pylab" />
-
+    <link href="http://yuta1125tp.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="My blog Atom Feed" />
 </head>
+	
+<body>
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="http://yuta1125tp.github.io/">My blog <strong></strong></a></h1>
-        </header><!-- /#banner -->
-        <nav id="menu"><ul>
-        </ul></nav><!-- /#menu -->
-<section id="content" class="body">
-  <header>
-    <h2 class="entry-title">
-      <a href="http://yuta1125tp.github.io/confmat-visualize.html" rel="bookmark"
-         title="Permalink to 混同行列の可視化">混同行列の可視化</a></h2>
- 
-  </header>
-  <footer class="post-info">
-    <abbr class="published" title="2014-08-29T00:00:00">
-      2014 08 29 (Fri)
-    </abbr>
+    <div class="container">
+	  
+	  <header role="banner">
+	    <div class="feeds">
+	        <a href="http://yuta1125tp.github.io/feeds/all.atom.xml" rel="alternate"><img src="/theme/images/icons/feed-32px.png" alt="atom feed"/></a>
+	    </div>
+		<a href="http://yuta1125tp.github.io" class="title">My blog</a>
+      </header>
+	
+	  <div class="wrapper">
+
+		  <div role="main" class="content">
+	<article class="full">
+			
+		<h1>混同行列の可視化</h1>
+		
+<div class="metadata">
+  <time datetime="2014-08-29T00:00:00" pubdate>2014 08 29 (Fri)</time>
     <address class="vcard author">
-      By           <a class="url fn" href="http://yuta1125tp.github.io/author/yshirakawa.html">yshirakawa</a>
+      by <a class="url fn" href="http://yuta1125tp.github.io/author/yshirakawa.html">yshirakawa</a>
     </address>
-  </footer><!-- /.post-info -->
-  <div class="entry-content">
-    <p>summary: confmatの可視化</p>
+  in <a href="http://yuta1125tp.github.io/category/python.html">python</a>
+<p class="tags">tagged <a href="http://yuta1125tp.github.io/tag/code.html">code</a>, <a href="http://yuta1125tp.github.io/tag/python.html">python</a>, <a href="http://yuta1125tp.github.io/tag/pylab.html">pylab</a></p></div>		
+		<p>summary: confmatの可視化</p>
 <p>混同行列ってClassificationの結果を可視化する際に使いやすいのだけど、
 いろいろ情報を載せようと思うと、毎回どう書いたらいいか悩んでしまう。</p>
 <p>備忘録の意味も込めてメモ。</p>
@@ -48,14 +53,61 @@
 <script src="https://gist.github.com/yuta1125tp/4c7f15829567a415da9e.js"></script>
 
 <p><img alt="confmat" src="images/confusion_matrix.png" title="confusion matrix" /></p>
-<p>こんな感じでよろしいでしょうか。</p>
-  </div><!-- /.entry-content -->
-</section>
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
-                which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
-        </footer><!-- /#contentinfo -->
+<p>こんな感じでよろしいでしょうか。</p>	
+
+	</article>
+
+    <p>
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="" data-lang="en" data-size="large" data-related="">Tweet</a>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	</p>
+
+
+		  </div>	
+		  
+		  <div class="sidebar">
+
+	        <nav>
+	          <h2>Categories</h2>
+	          <ul>
+	              <li ><a href="http://yuta1125tp.github.io/category/test.html">test</a></li>
+	              <li class="active"><a href="http://yuta1125tp.github.io/category/python.html">python</a></li>
+	              <li ><a href="http://yuta1125tp.github.io/category/pelican.html">pelican</a></li>
+	              <li ><a href="http://yuta1125tp.github.io/category/anime.html">anime</a></li>
+	          </ul>
+	        </nav>
+
+	          <aside>
+	          <h2>Social</h2>
+			    <ul class="social">
+				  <li><a href="https://twitter.com/kawa1125tp">Twitter</a><i></i></li>
+				  <li><a href="https://twitter.com/kawa1125bot">Twitter(bot)</a><i></i></li>
+				  <li><a href="http://github.com/yuta1125tp">Github</a><i></i></li>
+			    </ul>
+			  </aside>
+
+	          <aside>
+	            <h2>Blogroll</h2>
+	            <ul>
+	                <li><a href="http://getpelican.com/">Pelican</a></li>
+	                <li><a href="http://python.org/">Python.org</a></li>
+	                <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+	            </ul>
+	          </aside>
+
+		  </div>
+
+	  </div>
+
+      <footer>
+		<p role="contentinfo">
+		  © 2013 Yuta Shirakawa - Proudly powered by <a href="http://alexis.notmyidea.org/pelican/">pelican</a>. Theme <a href="https://github.com/fle/pelican-simplegrey">pelican-simplegrey</a>.
+    	</p>
+
+	  </footer>	
+
+	</div>
+	
+
 </body>
 </html>
