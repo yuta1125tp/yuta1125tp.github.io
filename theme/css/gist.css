@@ -19,12 +19,12 @@
 .gist-data {
     word-break: normal;
 }
-
+/*
 .gist-data table {
     margin: 0;
     border: none;
 }
-
+*/
 .gist-data tr,
 .gist-data td {
     border: none;
