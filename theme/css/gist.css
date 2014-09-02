@@ -31,5 +31,6 @@
 }
 
 .gist-data pre {
+    overflow: scroll;
     text-align: left;
 }
