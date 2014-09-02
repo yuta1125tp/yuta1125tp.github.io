@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>My blog</title><link>http://yuta1125tp.github.io/</link><description></description><atom:link href="http://yuta1125tp.github.io/feeds/yshira.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 30 Sep 2014 00:00:00 +0900</lastBuildDate><item><title>test2</title><link>http://yuta1125tp.github.io/test3.html</link><description>&lt;div class="gist"&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>My blog</title><link>http://yuta1125tp.github.io/</link><description></description><atom:link href="http://yuta1125tp.github.io/feeds/yshira.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 30 Sep 2014 00:00:00 +0900</lastBuildDate><item><title>test3</title><link>http://yuta1125tp.github.io/test3.html</link><description>&lt;div class="gist"&gt;
 &lt;script src='https://gist.github.com/3254906.js?file=brew-update-notifier.sh'&gt;&lt;/script&gt;
 &lt;noscript&gt;
 &lt;pre&gt;&lt;code&gt;#!/bin/bash ...&lt;/code&gt;&lt;/pre&gt;

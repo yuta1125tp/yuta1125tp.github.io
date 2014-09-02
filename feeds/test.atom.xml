@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>My blog</title><link href="http://yuta1125tp.github.io/" rel="alternate"></link><link href="http://yuta1125tp.github.io/feeds/test.atom.xml" rel="self"></link><id>http://yuta1125tp.github.io/</id><updated>2014-09-30T00:00:00+09:00</updated><entry><title>test2</title><link href="http://yuta1125tp.github.io/test3.html" rel="alternate"></link><updated>2014-09-30T00:00:00+09:00</updated><author><name>yshira</name></author><id>tag:yuta1125tp.github.io,2014-09-30:test3.html</id><summary type="html">&lt;div class="gist"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>My blog</title><link href="http://yuta1125tp.github.io/" rel="alternate"></link><link href="http://yuta1125tp.github.io/feeds/test.atom.xml" rel="self"></link><id>http://yuta1125tp.github.io/</id><updated>2014-09-30T00:00:00+09:00</updated><entry><title>test3</title><link href="http://yuta1125tp.github.io/test3.html" rel="alternate"></link><updated>2014-09-30T00:00:00+09:00</updated><author><name>yshira</name></author><id>tag:yuta1125tp.github.io,2014-09-30:test3.html</id><summary type="html">&lt;div class="gist"&gt;
 &lt;script src='https://gist.github.com/3254906.js?file=brew-update-notifier.sh'&gt;&lt;/script&gt;
 &lt;noscript&gt;
 &lt;pre&gt;&lt;code&gt;#!/bin/bash ...&lt;/code&gt;&lt;/pre&gt;
