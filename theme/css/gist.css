@@ -2,7 +2,7 @@
     font-size:13px;
     line-height:18px;
     margin-bottom:20px;
-    width:80%
+    width:100%
 }
 .gist pre{
     font-family:Menlo,Monaco,'Bitstream Vera Sans Mono','Courier New',monospace !important
@@ -31,6 +31,6 @@
 }
 
 .gist-data pre {
-    overflow: scroll;
+    overflow: visible;
     text-align: left;
 }
