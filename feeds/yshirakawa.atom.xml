@@ -7,6 +7,8 @@
 元の回答はjetのColormapだったが、そこはGrayScaleに変換。
 それに伴い、数字の色を変化させたのは私の寄与。&lt;/p&gt;
 &lt;p&gt;以下Gistより&lt;/p&gt;
+&lt;script src="https://gist.github.com/yuta1125tp/4c7f15829567a415da9e.js"&gt;&lt;/script&gt;
+
 &lt;p&gt;&lt;img src="images/confusion_matrix.png" alt="Confusion Matrix" style="width: 50%;"/&gt;&lt;/p&gt;
 &lt;p&gt;こんな感じでよろしいでしょうか。&lt;/p&gt;</summary><category term="code"></category><category term="python"></category><category term="pylab"></category></entry><entry><title>コードの貼り付け</title><link href="http://yuta1125tp.github.io/paste-code-test.html" rel="alternate"></link><updated>2014-08-27T00:00:00+09:00</updated><author><name>yshirakawa</name></author><id>tag:yuta1125tp.github.io,2014-08-27:paste-code-test.html</id><summary type="html">&lt;p&gt;pelicanの挙動が知りたいのでいろいろ書いてみる。
 今回はコードの貼り付け。&lt;/p&gt;

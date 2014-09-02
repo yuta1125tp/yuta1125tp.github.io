@@ -7,5 +7,7 @@
 元の回答はjetのColormapだったが、そこはGrayScaleに変換。
 それに伴い、数字の色を変化させたのは私の寄与。&lt;/p&gt;
 &lt;p&gt;以下Gistより&lt;/p&gt;
+&lt;script src="https://gist.github.com/yuta1125tp/4c7f15829567a415da9e.js"&gt;&lt;/script&gt;
+
 &lt;p&gt;&lt;img src="images/confusion_matrix.png" alt="Confusion Matrix" style="width: 50%;"/&gt;&lt;/p&gt;
 &lt;p&gt;こんな感じでよろしいでしょうか。&lt;/p&gt;</summary><category term="code"></category><category term="python"></category><category term="pylab"></category></entry></feed>
