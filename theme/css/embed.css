@@ -14,7 +14,7 @@
 }
 
 .gist .gist-file .gist-meta {
-    overflow: hidden;
+    /* overflow: hidden; */
     font-size: 85%;
     padding: .5em;
     color: #666;
