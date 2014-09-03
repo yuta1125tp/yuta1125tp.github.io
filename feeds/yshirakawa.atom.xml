@@ -52,7 +52,7 @@ gistの内容が改行されない程度に本文カラムが拡張されたの�
 
 &lt;p&gt;ありがたい。&lt;/p&gt;
 &lt;p&gt;どうやらブラウザの環境にも依存するらしいけど、table-layoutにfixedを指定しなければいけなかったらしい。
-今回の件でHTMLやCSSに対する基礎知識を得られたし、いい機会といえばいい機会だった。&lt;/p&gt;</summary><category term="html"></category><category term="css"></category></entry><entry><title>てすと</title><link href="http://yuta1125tp.github.io/test.html" rel="alternate"></link><updated>2014-09-02T00:00:00+09:00</updated><author><name>yshirakawa</name></author><id>tag:yuta1125tp.github.io,2014-09-02:test.html</id><summary type="html">&lt;p&gt;this is a test&lt;/p&gt;</summary><category term="test"></category></entry><entry><title>混同行列の可視化</title><link href="http://yuta1125tp.github.io/confmat-visualize.html" rel="alternate"></link><updated>2014-08-29T00:00:00+09:00</updated><author><name>yshirakawa</name></author><id>tag:yuta1125tp.github.io,2014-08-29:confmat-visualize.html</id><summary type="html">&lt;p&gt;混同行列ってClassificationの結果を可視化する際に使いやすいのだけど、
+今回の件でHTMLやCSSに対する基礎知識を得られたし、いい機会といえばいい機会だった。&lt;/p&gt;</summary><category term="html"></category><category term="css"></category></entry><entry><title>混同行列の可視化</title><link href="http://yuta1125tp.github.io/confmat-visualize.html" rel="alternate"></link><updated>2014-08-29T00:00:00+09:00</updated><author><name>yshirakawa</name></author><id>tag:yuta1125tp.github.io,2014-08-29:confmat-visualize.html</id><summary type="html">&lt;p&gt;混同行列ってClassificationの結果を可視化する際に使いやすいのだけど、
 いろいろ情報を載せようと思うと、毎回どう書いたらいいか悩んでしまう。&lt;/p&gt;
 &lt;p&gt;備忘録の意味も込めてメモ。&lt;/p&gt;
 &lt;p&gt;コード中にもあるようにメインの部分はStackOverflowの回答に沿っている。
