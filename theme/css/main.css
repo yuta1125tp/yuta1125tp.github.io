@@ -43,16 +43,17 @@ body {
 }
 
 header {
-  position: fixed !important;
+  position: fixed !important; // add shira
   background-color: #40403F;
   height: 50px;
+  right: 0;
   line-height: 50px;
   padding: 0 1em;
 }
 
 .wrapper {
   display: table;
-  table-layout: fixed;
+  table-layout: fixed; // add shira
   width: 100%;
 }
 
