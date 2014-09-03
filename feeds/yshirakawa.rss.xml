@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>My blog</title><link>http://yuta1125tp.github.io/</link><description></description><atom:link href="http://yuta1125tp.github.io/feeds/yshirakawa.rss.xml" rel="self"></atom:link><lastBuildDate>Thu, 04 Sep 2014 00:00:00 +0900</lastBuildDate><item><title>display:table-cell;がうまいこと機能しない</title><link>http://yuta1125tp.github.io/table-cell.html</link><description>&lt;p&gt;このブログ自体はgithub pageにホストしていて、ソースはPythonのPelicanモジュールにお世話になってる。
-デザインは有志の方々がPelicanに投稿してくださった中から選んだものです。&lt;/p&gt;
+デザインは有志の方々がPelicanに投稿してくださった中から選んだ&lt;a href="https://github.com/fle/pelican-simplegrey" title="https://github.com/fle/pelican-simplegrey"&gt;pelican-simplegrey&lt;/a&gt;というデザインです。&lt;/p&gt;
 &lt;p&gt;Pelicanはテンプレートから静的HTMLのソースを出力してくれるので、
 適当に文章を書いてやれば、テンプレートにしたがって、整形されたHTMLが出力されるということ。
 であってると思う。&lt;/p&gt;
@@ -52,7 +52,9 @@ gistの内容が改行されない程度に本文カラムが拡張されたの�
 
 &lt;p&gt;ありがたい。&lt;/p&gt;
 &lt;p&gt;どうやらブラウザの環境にも依存するらしいけど、table-layoutにfixedを指定しなければいけなかったらしい。
-今回の件でHTMLやCSSに対する基礎知識を得られたし、いい機会といえばいい機会だった。&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">yshirakawa</dc:creator><pubDate>Thu, 04 Sep 2014 00:00:00 +0900</pubDate><guid>tag:yuta1125tp.github.io,2014-09-04:table-cell.html</guid><category>html</category><category>css</category></item><item><title>混同行列の可視化</title><link>http://yuta1125tp.github.io/confmat-visualize.html</link><description>&lt;p&gt;混同行列ってClassificationの結果を可視化する際に使いやすいのだけど、
+table-layoutをfixedにしていないのは仕様なのか、意図的なのか。
+そこは謎のまま。&lt;/p&gt;
+&lt;p&gt;今回の件でHTMLやCSSに対する基礎知識を得られたし、いい機会といえばいい機会だった。&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">yshirakawa</dc:creator><pubDate>Thu, 04 Sep 2014 00:00:00 +0900</pubDate><guid>tag:yuta1125tp.github.io,2014-09-04:table-cell.html</guid><category>html</category><category>css</category></item><item><title>混同行列の可視化</title><link>http://yuta1125tp.github.io/confmat-visualize.html</link><description>&lt;p&gt;混同行列ってClassificationの結果を可視化する際に使いやすいのだけど、
 いろいろ情報を載せようと思うと、毎回どう書いたらいいか悩んでしまう。&lt;/p&gt;
 &lt;p&gt;備忘録の意味も込めてメモ。&lt;/p&gt;
 &lt;p&gt;コード中にもあるようにメインの部分はStackOverflowの回答に沿っている。

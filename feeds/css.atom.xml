@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>My blog</title><link href="http://yuta1125tp.github.io/" rel="alternate"></link><link href="http://yuta1125tp.github.io/feeds/css.atom.xml" rel="self"></link><id>http://yuta1125tp.github.io/</id><updated>2014-09-04T00:00:00+09:00</updated><entry><title>display:table-cell;がうまいこと機能しない</title><link href="http://yuta1125tp.github.io/table-cell.html" rel="alternate"></link><updated>2014-09-04T00:00:00+09:00</updated><author><name>yshirakawa</name></author><id>tag:yuta1125tp.github.io,2014-09-04:table-cell.html</id><summary type="html">&lt;p&gt;このブログ自体はgithub pageにホストしていて、ソースはPythonのPelicanモジュールにお世話になってる。
-デザインは有志の方々がPelicanに投稿してくださった中から選んだものです。&lt;/p&gt;
+デザインは有志の方々がPelicanに投稿してくださった中から選んだ&lt;a href="https://github.com/fle/pelican-simplegrey" title="https://github.com/fle/pelican-simplegrey"&gt;pelican-simplegrey&lt;/a&gt;というデザインです。&lt;/p&gt;
 &lt;p&gt;Pelicanはテンプレートから静的HTMLのソースを出力してくれるので、
 適当に文章を書いてやれば、テンプレートにしたがって、整形されたHTMLが出力されるということ。
 であってると思う。&lt;/p&gt;
@@ -52,4 +52,6 @@ gistの内容が改行されない程度に本文カラムが拡張されたの�
 
 &lt;p&gt;ありがたい。&lt;/p&gt;
 &lt;p&gt;どうやらブラウザの環境にも依存するらしいけど、table-layoutにfixedを指定しなければいけなかったらしい。
-今回の件でHTMLやCSSに対する基礎知識を得られたし、いい機会といえばいい機会だった。&lt;/p&gt;</summary><category term="html"></category><category term="css"></category></entry></feed>
+table-layoutをfixedにしていないのは仕様なのか、意図的なのか。
+そこは謎のまま。&lt;/p&gt;
+&lt;p&gt;今回の件でHTMLやCSSに対する基礎知識を得られたし、いい機会といえばいい機会だった。&lt;/p&gt;</summary><category term="html"></category><category term="css"></category></entry></feed>
