@@ -31,8 +31,61 @@
 
 
       <article>
-        <h1><a href="http://yuta1125tp.github.io/test.html">てすと</a></h1>
-        <p>this is a test</p>
+        <h1><a href="http://yuta1125tp.github.io/table-cell.html">display:table-cell;がうまいこと機能しない</a></h1>
+        <p>このブログ自体はgithub pageにホストしていて、ソースはPythonのPelicanモジュールにお世話になってる。
+デザインは有志の方々がPelicanに投稿してくださった中から選んだものです。</p>
+<p>Pelicanはテンプレートから静的HTMLのソースを出力してくれるので、
+適当に文章を書いてやれば、テンプレートにしたがって、整形されたHTMLが出力されるということ。
+であってると思う。</p>
+<p>で、私の使わせて頂いているpelican-simplegreyは2カラムのレイアウトなんですが、通常は75:25で本文とサイドバーが分割される。
+これは見栄えを定めるcssファイル中に以下の様な記述があるからなんだけども（一部抜粋）、</p>
+<div class="highlight"><pre><span class="nt">body</span> <span class="p">{</span>
+  <span class="k">font-family</span><span class="o">:</span> <span class="s1">&#39;Source Sans Pro&#39;</span><span class="o">,</span> <span class="k">sans-serif</span><span class="p">;</span>
+  <span class="k">font-size</span><span class="o">:</span> <span class="m">16px</span><span class="p">;</span>
+  <span class="k">line-height</span><span class="o">:</span> <span class="m">150</span><span class="o">%</span><span class="p">;</span>
+  <span class="k">text-align</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+  <span class="k">color</span><span class="o">:</span> <span class="m">#4D4D4C</span><span class="p">;</span>
+  <span class="k">padding</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="k">min-width</span><span class="o">:</span> <span class="m">740px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.wrapper</span> <span class="p">{</span>
+  <span class="k">display</span><span class="o">:</span> <span class="n">table</span><span class="p">;</span>
+  <span class="k">width</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.content</span> <span class="p">{</span>
+  <span class="k">display</span><span class="o">:</span> <span class="k">table-cell</span><span class="p">;</span>
+  <span class="k">border-left</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#d6d6d6</span><span class="p">;</span>
+  <span class="k">border-right</span><span class="o">:</span> <span class="m">1px</span> <span class="k">dotted</span> <span class="m">#D6D6D6</span><span class="p">;</span>
+  <span class="k">padding</span><span class="o">:</span> <span class="m">0</span> <span class="m">20px</span> <span class="m">1em</span> <span class="m">20px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.sidebar</span> <span class="p">{</span>
+  <span class="k">display</span><span class="o">:</span> <span class="k">table-cell</span><span class="p">;</span>
+  <span class="k">width</span><span class="o">:</span> <span class="m">25</span><span class="o">%</span><span class="p">;</span>
+  <span class="k">border-right</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#d6d6d6</span><span class="p">;</span>
+  <span class="k">padding</span><span class="o">:</span> <span class="m">0</span> <span class="m">20px</span> <span class="m">1em</span> <span class="m">20px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>ページレイアウト以外にもフォントや色についての記述もあるけど、今回興味のある部分を意訳するならば、</p>
+<ul>
+<li>bodyは最低でも740pixelの幅を保つ。</li>
+<li>.wrapper classはその全体を受け取って</li>
+<li>.content classは特にしていないけどtableの1つのセルであり、</li>
+<li>同様に.sidebarもtableの1つのセルで、幅は25%に指定されている。</li>
+</ul>
+<p>となると思う。</p>
+<p>このように100のうち25がサイドバーなので本文は必ず75%になると思うのだけど、
+先日投稿した記事は主にgistの埋め込みにより横幅がとても広く取られた。
+gistの内容が改行されない程度に本文カラムが拡張されたのである。</p>
+<p><img src="images/layoutbug.png" alt="layout bug" style="width:50%;"></p>
+<p>これは思ってた挙動と違う。</p>
+<p>で、数日HTMLとCSS（とGIST）について調べてたら以下の解決策に辿り着いた。</p>
+<script src="https://gist.github.com/geckotang/6535733.js"></script>
+
+<p>ありがたい。</p>
+<p>どうやらブラウザの環境にも依存するらしいけど、table-layoutにfixedを指定しなければいけなかったらしい。
+今回の件でHTMLやCSSに対する基礎知識を得られたし、いい機会だった。</p>
       </article>
 
       <hr />
@@ -41,6 +94,12 @@
           <h3>Last posts</h3>
           <ol class="archive">
     
+
+
+      <li>
+<a href="http://yuta1125tp.github.io/test.html" rel="bookmark" title="Permalink to てすと">てすと</a>
+  <time datetime="2014-09-02T00:00:00" pubdate>2014 09 02 (Tue)</time>
+<p class="tags">tags: <a href="http://yuta1125tp.github.io/tag/test.html">test</a></p></a>      </li>
 
 
       <li>
@@ -53,12 +112,6 @@
 <a href="http://yuta1125tp.github.io/paste-code-test.html" rel="bookmark" title="Permalink to コードの貼り付け">コードの貼り付け</a>
   <time datetime="2014-08-27T00:00:00" pubdate>2014 08 27 (Wed)</time>
 <p class="tags">tags: <a href="http://yuta1125tp.github.io/tag/code.html">code</a><a href="http://yuta1125tp.github.io/tag/test.html">test</a></p></a>      </li>
-
-
-      <li>
-<a href="http://yuta1125tp.github.io/table-cell.html" rel="bookmark" title="Permalink to display:table-cell;がうまいこと機能しない">display:table-cell;がうまいこと機能しない</a>
-  <time datetime="2014-08-27T00:00:00" pubdate>2014 08 27 (Wed)</time>
-<p class="tags">tags: <a href="http://yuta1125tp.github.io/tag/html.html">html</a><a href="http://yuta1125tp.github.io/tag/css.html">css</a></p></a>      </li>
 
 
       <li>

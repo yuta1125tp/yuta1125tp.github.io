@@ -1,39 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>My blog</title><link href="http://yuta1125tp.github.io/" rel="alternate"></link><link href="http://yuta1125tp.github.io/feeds/all.atom.xml" rel="self"></link><id>http://yuta1125tp.github.io/</id><updated>2014-09-02T00:00:00+09:00</updated><entry><title>てすと</title><link href="http://yuta1125tp.github.io/test.html" rel="alternate"></link><updated>2014-09-02T00:00:00+09:00</updated><author><name>yshirakawa</name></author><id>tag:yuta1125tp.github.io,2014-09-02:test.html</id><summary type="html">&lt;p&gt;this is a test&lt;/p&gt;</summary><category term="test"></category></entry><entry><title>混同行列の可視化?</title><link href="http://yuta1125tp.github.io/confmat-visualize.html" rel="alternate"></link><updated>2014-08-29T00:00:00+09:00</updated><author><name>yshirakawa</name></author><id>tag:yuta1125tp.github.io,2014-08-29:confmat-visualize.html</id><summary type="html">&lt;p&gt;混同行列ってClassificationの結果を可視化する際に使いやすいのだけど、
-いろいろ情報を載せようと思うと、毎回どう書いたらいいか悩んでしまう。&lt;/p&gt;
-&lt;p&gt;備忘録の意味も込めてメモ。&lt;/p&gt;
-&lt;p&gt;コード中にもあるようにメインの部分はStackOverflowの回答に沿っている。
-混同行列の図中に濃淡だけではなく具体的な数値も載ってるのが使いやすいポイント。
-元の回答はjetのColormapだったが、そこはGrayScaleに変換。
-それに伴い、数字の色を変化させたのは私の寄与。&lt;/p&gt;
-&lt;p&gt;以下Gistより&lt;/p&gt;
-&lt;div class="gist"&gt;
-&lt;script src="https://gist.github.com/yuta1125tp/4c7f15829567a415da9e.js"&gt;&lt;/script&gt;
-&lt;noscript&gt;
-&lt;pre&gt;&lt;code&gt;#!/bin/bash ...&lt;/code&gt;&lt;/pre&gt;
-&lt;/noscript&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;img src="images/confusion_matrix.png" alt="Confusion Matrix" style="width: 50%;"/&gt;&lt;/p&gt;
-&lt;p&gt;こんな感じでよろしいでしょうか。&lt;/p&gt;</summary><category term="code"></category><category term="python"></category><category term="pylab"></category></entry><entry><title>コードの貼り付け</title><link href="http://yuta1125tp.github.io/paste-code-test.html" rel="alternate"></link><updated>2014-08-27T00:00:00+09:00</updated><author><name>yshirakawa</name></author><id>tag:yuta1125tp.github.io,2014-08-27:paste-code-test.html</id><summary type="html">&lt;p&gt;pelicanの挙動が知りたいのでいろいろ書いてみる。
-今回はコードの貼り付け。&lt;/p&gt;
-&lt;p&gt;コードの書き方がわからないような時、グーグル先生に尋ねるとだいたい何かしらヒントを得られる。
-場合によってはまるまる流用できるようなこともある。&lt;/p&gt;
-&lt;p&gt;正直とても助かっているので、微力ながら力添えできるよう僕も何かしらアウトプットしていきたい。&lt;/p&gt;
-&lt;p&gt;以下貼り付けテスト&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="cp"&gt;#-*- coding:utf-8 -*-&lt;/span&gt;
-&lt;span class="s"&gt;&amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
-&lt;span class="n"&gt;this&lt;/span&gt; &lt;span class="n"&gt;is&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="n"&gt;test&lt;/span&gt; &lt;span class="n"&gt;code&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;
-&lt;span class="s"&gt;&amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
-&lt;span class="n"&gt;def&lt;/span&gt; &lt;span class="n"&gt;sayHello&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
-    &lt;span class="n"&gt;print&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;Hello python!&amp;quot;&lt;/span&gt;
-
-&lt;span class="n"&gt;def&lt;/span&gt; &lt;span class="n"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
-    &lt;span class="n"&gt;sayHello&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-
-&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;__name__&lt;/span&gt;&lt;span class="o"&gt;==&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;__main__&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
-    &lt;span class="n"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</summary><category term="code"></category><category term="test"></category></entry><entry><title>display:table-cell;がうまいこと機能しない</title><link href="http://yuta1125tp.github.io/table-cell.html" rel="alternate"></link><updated>2014-08-27T00:00:00+09:00</updated><author><name>yshirakawa</name></author><id>tag:yuta1125tp.github.io,2014-08-27:table-cell.html</id><summary type="html">&lt;p&gt;このブログ自体はgithub pageにホストしていて、ソースはPythonのPelicanモジュールにお世話になってる。
+<feed xmlns="http://www.w3.org/2005/Atom"><title>My blog</title><link href="http://yuta1125tp.github.io/" rel="alternate"></link><link href="http://yuta1125tp.github.io/feeds/all.atom.xml" rel="self"></link><id>http://yuta1125tp.github.io/</id><updated>2014-09-04T00:00:00+09:00</updated><entry><title>display:table-cell;がうまいこと機能しない</title><link href="http://yuta1125tp.github.io/table-cell.html" rel="alternate"></link><updated>2014-09-04T00:00:00+09:00</updated><author><name>yshirakawa</name></author><id>tag:yuta1125tp.github.io,2014-09-04:table-cell.html</id><summary type="html">&lt;p&gt;このブログ自体はgithub pageにホストしていて、ソースはPythonのPelicanモジュールにお世話になってる。
 デザインは有志の方々がPelicanに投稿してくださった中から選んだものです。&lt;/p&gt;
 &lt;p&gt;Pelicanはテンプレートから静的HTMLのソースを出力してくれるので、
 適当に文章を書いてやれば、テンプレートにしたがって、整形されたHTMLが出力されるということ。
@@ -86,7 +52,41 @@ gistの内容が改行されない程度に本文カラムが拡張されたの�
 
 &lt;p&gt;ありがたい。&lt;/p&gt;
 &lt;p&gt;どうやらブラウザの環境にも依存するらしいけど、table-layoutにfixedを指定しなければいけなかったらしい。
-今回の件でHTMLやCSSに対する基礎知識を得られたし、いい機会だった。&lt;/p&gt;</summary><category term="html"></category><category term="css"></category></entry><entry><title>画像の貼り付け</title><link href="http://yuta1125tp.github.io/paste-image.html" rel="alternate"></link><updated>2014-08-26T00:00:00+09:00</updated><author><name>yshirakawa</name></author><id>tag:yuta1125tp.github.io,2014-08-26:paste-image.html</id><summary type="html">&lt;p&gt;pelicanの挙動が知りたいのでいろいろ書いてみる。
+今回の件でHTMLやCSSに対する基礎知識を得られたし、いい機会だった。&lt;/p&gt;</summary><category term="html"></category><category term="css"></category></entry><entry><title>てすと</title><link href="http://yuta1125tp.github.io/test.html" rel="alternate"></link><updated>2014-09-02T00:00:00+09:00</updated><author><name>yshirakawa</name></author><id>tag:yuta1125tp.github.io,2014-09-02:test.html</id><summary type="html">&lt;p&gt;this is a test&lt;/p&gt;</summary><category term="test"></category></entry><entry><title>混同行列の可視化?</title><link href="http://yuta1125tp.github.io/confmat-visualize.html" rel="alternate"></link><updated>2014-08-29T00:00:00+09:00</updated><author><name>yshirakawa</name></author><id>tag:yuta1125tp.github.io,2014-08-29:confmat-visualize.html</id><summary type="html">&lt;p&gt;混同行列ってClassificationの結果を可視化する際に使いやすいのだけど、
+いろいろ情報を載せようと思うと、毎回どう書いたらいいか悩んでしまう。&lt;/p&gt;
+&lt;p&gt;備忘録の意味も込めてメモ。&lt;/p&gt;
+&lt;p&gt;コード中にもあるようにメインの部分はStackOverflowの回答に沿っている。
+混同行列の図中に濃淡だけではなく具体的な数値も載ってるのが使いやすいポイント。
+元の回答はjetのColormapだったが、そこはGrayScaleに変換。
+それに伴い、数字の色を変化させたのは私の寄与。&lt;/p&gt;
+&lt;p&gt;以下Gistより&lt;/p&gt;
+&lt;div class="gist"&gt;
+&lt;script src="https://gist.github.com/yuta1125tp/4c7f15829567a415da9e.js"&gt;&lt;/script&gt;
+&lt;noscript&gt;
+&lt;pre&gt;&lt;code&gt;#!/bin/bash ...&lt;/code&gt;&lt;/pre&gt;
+&lt;/noscript&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;img src="images/confusion_matrix.png" alt="Confusion Matrix" style="width: 50%;"/&gt;&lt;/p&gt;
+&lt;p&gt;こんな感じでよろしいでしょうか。&lt;/p&gt;</summary><category term="code"></category><category term="python"></category><category term="pylab"></category></entry><entry><title>コードの貼り付け</title><link href="http://yuta1125tp.github.io/paste-code-test.html" rel="alternate"></link><updated>2014-08-27T00:00:00+09:00</updated><author><name>yshirakawa</name></author><id>tag:yuta1125tp.github.io,2014-08-27:paste-code-test.html</id><summary type="html">&lt;p&gt;pelicanの挙動が知りたいのでいろいろ書いてみる。
+今回はコードの貼り付け。&lt;/p&gt;
+&lt;p&gt;コードの書き方がわからないような時、グーグル先生に尋ねるとだいたい何かしらヒントを得られる。
+場合によってはまるまる流用できるようなこともある。&lt;/p&gt;
+&lt;p&gt;正直とても助かっているので、微力ながら力添えできるよう僕も何かしらアウトプットしていきたい。&lt;/p&gt;
+&lt;p&gt;以下貼り付けテスト&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="cp"&gt;#-*- coding:utf-8 -*-&lt;/span&gt;
+&lt;span class="s"&gt;&amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
+&lt;span class="n"&gt;this&lt;/span&gt; &lt;span class="n"&gt;is&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="n"&gt;test&lt;/span&gt; &lt;span class="n"&gt;code&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;
+&lt;span class="s"&gt;&amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
+&lt;span class="n"&gt;def&lt;/span&gt; &lt;span class="n"&gt;sayHello&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+    &lt;span class="n"&gt;print&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;Hello python!&amp;quot;&lt;/span&gt;
+
+&lt;span class="n"&gt;def&lt;/span&gt; &lt;span class="n"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+    &lt;span class="n"&gt;sayHello&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;__name__&lt;/span&gt;&lt;span class="o"&gt;==&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;__main__&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+    &lt;span class="n"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="code"></category><category term="test"></category></entry><entry><title>画像の貼り付け</title><link href="http://yuta1125tp.github.io/paste-image.html" rel="alternate"></link><updated>2014-08-26T00:00:00+09:00</updated><author><name>yshirakawa</name></author><id>tag:yuta1125tp.github.io,2014-08-26:paste-image.html</id><summary type="html">&lt;p&gt;pelicanの挙動が知りたいのでいろいろ書いてみる。
 まずは、画像の貼り付け。&lt;/p&gt;
 &lt;hr /&gt;
 &lt;p&gt;&lt;img alt="original" src="images/Costa_Rican_Frog_s.jpg" title="origin flog" /&gt;
