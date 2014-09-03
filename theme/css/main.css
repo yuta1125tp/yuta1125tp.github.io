@@ -43,7 +43,6 @@ body {
 }
 
 header {
-  position: fixed !important; // add shira
   background-color: #40403F;
   height: 50px;
   line-height: 50px;
@@ -52,7 +51,7 @@ header {
 
 .wrapper {
   display: table;
-  table-layout: fixed; // add shira
+  table-layout: fixed;
   width: 100%;
 }
 
