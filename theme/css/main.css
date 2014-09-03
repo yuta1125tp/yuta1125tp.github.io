@@ -51,7 +51,7 @@ header {
 
 .wrapper {
   display: table;
-  table-layout: fixed; // add shira
+  table-layout: fixed;
   width: 100%;
 }
 
