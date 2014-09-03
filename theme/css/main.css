@@ -46,7 +46,6 @@ header {
   position: fixed !important; // add shira
   background-color: #40403F;
   height: 50px;
-  right: 0;
   line-height: 50px;
   padding: 0 1em;
 }
