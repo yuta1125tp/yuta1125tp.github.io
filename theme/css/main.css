@@ -43,6 +43,7 @@ body {
 }
 
 header {
+  position: fixed !important;
   background-color: #40403F;
   height: 50px;
   line-height: 50px;
