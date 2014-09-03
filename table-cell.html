@@ -47,8 +47,7 @@
 適当に文章を書いてやれば、テンプレートにしたがって、整形されたHTMLが出力されるということ。
 であってると思う。</p>
 <p>で、私の使わせて頂いているpelican-simplegreyは2カラムのレイアウトなんですが、通常は75:25で本文とサイドバーが分割される。
-これは見栄えを定めるcssファイル中に以下の様な記述があるから
-（一部抜粋）</p>
+これは見栄えを定めるcssファイル中に以下の様な記述があるからなんだけども（一部抜粋）、</p>
 <div class="highlight"><pre><span class="nt">body</span> <span class="p">{</span>
   <span class="k">font-family</span><span class="o">:</span> <span class="s1">&#39;Source Sans Pro&#39;</span><span class="o">,</span> <span class="k">sans-serif</span><span class="p">;</span>
   <span class="k">font-size</span><span class="o">:</span> <span class="m">16px</span><span class="p">;</span>
@@ -62,14 +61,12 @@
   <span class="k">display</span><span class="o">:</span> <span class="n">table</span><span class="p">;</span>
   <span class="k">width</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span>
 <span class="p">}</span>
-
 <span class="nc">.content</span> <span class="p">{</span>
   <span class="k">display</span><span class="o">:</span> <span class="k">table-cell</span><span class="p">;</span>
   <span class="k">border-left</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#d6d6d6</span><span class="p">;</span>
   <span class="k">border-right</span><span class="o">:</span> <span class="m">1px</span> <span class="k">dotted</span> <span class="m">#D6D6D6</span><span class="p">;</span>
   <span class="k">padding</span><span class="o">:</span> <span class="m">0</span> <span class="m">20px</span> <span class="m">1em</span> <span class="m">20px</span><span class="p">;</span>
 <span class="p">}</span>
-
 <span class="nc">.sidebar</span> <span class="p">{</span>
   <span class="k">display</span><span class="o">:</span> <span class="k">table-cell</span><span class="p">;</span>
   <span class="k">width</span><span class="o">:</span> <span class="m">25</span><span class="o">%</span><span class="p">;</span>
@@ -79,12 +76,14 @@
 </pre></div>
 
 
-<p>今回興味のある部分を意訳するならば、
-<em> bodyは最低でも740pixelの幅を保つ。
-</em> .wrapper classはその全体を受け取って
-<em> .content classは特にしていないけどtableの1つのセルであり、
-</em> 同様に.sidebarもtableの1つのセルで、幅は25%に指定されている。
-となると思う。</p>
+<p>ページレイアウト以外にもフォントや色についての記述もあるけど、今回興味のある部分を意訳するならば、</p>
+<ul>
+<li>bodyは最低でも740pixelの幅を保つ。</li>
+<li>.wrapper classはその全体を受け取って</li>
+<li>.content classは特にしていないけどtableの1つのセルであり、</li>
+<li>同様に.sidebarもtableの1つのセルで、幅は25%に指定されている。</li>
+</ul>
+<p>となると思う。</p>
 <p>このように100のうち25がサイドバーなので本文は必ず75%になると思うのだけど、
 先日投稿した記事は主にgistの埋め込みにより横幅がとても広く取られた。
 gistの内容が改行されない程度に本文カラムが拡張されたのである。</p>

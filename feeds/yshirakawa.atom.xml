@@ -39,8 +39,7 @@
 適当に文章を書いてやれば、テンプレートにしたがって、整形されたHTMLが出力されるということ。
 であってると思う。&lt;/p&gt;
 &lt;p&gt;で、私の使わせて頂いているpelican-simplegreyは2カラムのレイアウトなんですが、通常は75:25で本文とサイドバーが分割される。
-これは見栄えを定めるcssファイル中に以下の様な記述があるから
-（一部抜粋）&lt;/p&gt;
+これは見栄えを定めるcssファイル中に以下の様な記述があるからなんだけども（一部抜粋）、&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nt"&gt;body&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
   &lt;span class="k"&gt;font-family&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Source Sans Pro&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="k"&gt;sans-serif&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
   &lt;span class="k"&gt;font-size&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;16px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
@@ -54,14 +53,12 @@
   &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;table&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
   &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;100&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
-
 &lt;span class="nc"&gt;.content&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
   &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;table-cell&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
   &lt;span class="k"&gt;border-left&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;1px&lt;/span&gt; &lt;span class="k"&gt;solid&lt;/span&gt; &lt;span class="m"&gt;#d6d6d6&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
   &lt;span class="k"&gt;border-right&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;1px&lt;/span&gt; &lt;span class="k"&gt;dotted&lt;/span&gt; &lt;span class="m"&gt;#D6D6D6&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
   &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;20px&lt;/span&gt; &lt;span class="m"&gt;1em&lt;/span&gt; &lt;span class="m"&gt;20px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
-
 &lt;span class="nc"&gt;.sidebar&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
   &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;table-cell&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
   &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;25&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
@@ -71,12 +68,14 @@
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;今回興味のある部分を意訳するならば、
-&lt;em&gt; bodyは最低でも740pixelの幅を保つ。
-&lt;/em&gt; .wrapper classはその全体を受け取って
-&lt;em&gt; .content classは特にしていないけどtableの1つのセルであり、
-&lt;/em&gt; 同様に.sidebarもtableの1つのセルで、幅は25%に指定されている。
-となると思う。&lt;/p&gt;
+&lt;p&gt;ページレイアウト以外にもフォントや色についての記述もあるけど、今回興味のある部分を意訳するならば、&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;bodyは最低でも740pixelの幅を保つ。&lt;/li&gt;
+&lt;li&gt;.wrapper classはその全体を受け取って&lt;/li&gt;
+&lt;li&gt;.content classは特にしていないけどtableの1つのセルであり、&lt;/li&gt;
+&lt;li&gt;同様に.sidebarもtableの1つのセルで、幅は25%に指定されている。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;となると思う。&lt;/p&gt;
 &lt;p&gt;このように100のうち25がサイドバーなので本文は必ず75%になると思うのだけど、
 先日投稿した記事は主にgistの埋め込みにより横幅がとても広く取られた。
 gistの内容が改行されない程度に本文カラムが拡張されたのである。&lt;/p&gt;
