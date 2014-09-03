@@ -47,11 +47,13 @@ header {
   height: 50px;
   line-height: 50px;
   padding: 0 1em;
+  width: 100%;
+  position: fixed;
 }
 
 .wrapper {
   display: table;
-  table-layout: fixed;
+  table-layout: fixed; // add shira
   width: 100%;
 }
 
