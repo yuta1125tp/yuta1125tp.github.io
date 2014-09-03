@@ -46,6 +46,7 @@ header {
   position: fixed !important; // add shira
   background-color: #40403F;
   height: 50px;
+  right: 0; // add shira
   line-height: 50px;
   padding: 0 1em;
 }
@@ -81,7 +82,6 @@ footer {
 /* Header */
 
 header a {
-  width: 100%;
   color: #E5E5E3;
   border-bottom: none;
 }
