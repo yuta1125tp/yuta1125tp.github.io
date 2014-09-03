@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="">	
+<head>
+	<meta charset="utf-8"/>
+	<title>display:table-cell;がうまいこと機能しない - My blog</title>	
+	<meta name="author" content="Yuta Shirakawa">
+	
+
+	<meta name="description" content="">
+
+
+	<link rel="top" href="#" /><link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic,400italic,600italic|Source+Code+Pro' rel='stylesheet' type='text/css'></link>
+	<link rel="stylesheet" href="http://yuta1125tp.github.io/theme/css/main.css" type="text/css" />
+		
+
+    <link href="http://yuta1125tp.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="My blog Atom Feed" />
+</head>
+	
+<body>
+
+    <div class="container">
+	  
+	  <header role="banner">
+	    <div class="feeds">
+	        <a href="http://yuta1125tp.github.io/feeds/all.atom.xml" rel="alternate"><img src="/theme/images/icons/feed-32px.png" alt="atom feed"/></a>
+	    </div>
+		<a href="http://yuta1125tp.github.io" class="title">My blog</a>
+      </header>
+	
+	  <div class="wrapper">
+
+		  <div role="main" class="content">
+	<article class="full">
+			
+		<h1>display:table-cell;がうまいこと機能しない</h1>
+		
+<div class="metadata">
+  <time datetime="2014-08-27T00:00:00" pubdate>2014 08 27 (Wed)</time>
+    <address class="vcard author">
+      by <a class="url fn" href="http://yuta1125tp.github.io/author/yshirakawa.html">yshirakawa</a>
+    </address>
+  in <a href="http://yuta1125tp.github.io/category/css.html">css</a>
+<p class="tags">tagged <a href="http://yuta1125tp.github.io/tag/html.html">html</a>, <a href="http://yuta1125tp.github.io/tag/css.html">css</a></p></div>		
+		<p>このブログ自体はgithub pageにホストしていて、ソースはPythonのPelicanモジュールにお世話になってる。
+デザインは有志の方々がPelicanに投稿してくださった中から選んだものです。</p>
+<p>Pelicanはテンプレートから静的HTMLのソースを出力してくれるので、
+適当に文章を書いてやれば、テンプレートにしたがって、整形されたHTMLが出力されるということ。
+であってると思う。</p>
+<p>で、私の使わせて頂いているpelican-simplegreyは2カラムのレイアウトなんですが、通常は75:25で本文とサイドバーが分割される。
+これは見栄えを定めるcssファイル中に以下の様な記述があるから
+（一部抜粋）</p>
+<div class="highlight"><pre><span class="nt">body</span> <span class="p">{</span>
+  <span class="k">font-family</span><span class="o">:</span> <span class="s1">&#39;Source Sans Pro&#39;</span><span class="o">,</span> <span class="k">sans-serif</span><span class="p">;</span>
+  <span class="k">font-size</span><span class="o">:</span> <span class="m">16px</span><span class="p">;</span>
+  <span class="k">line-height</span><span class="o">:</span> <span class="m">150</span><span class="o">%</span><span class="p">;</span>
+  <span class="k">text-align</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+  <span class="k">color</span><span class="o">:</span> <span class="m">#4D4D4C</span><span class="p">;</span>
+  <span class="k">padding</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="k">min-width</span><span class="o">:</span> <span class="m">740px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.wrapper</span> <span class="p">{</span>
+  <span class="k">display</span><span class="o">:</span> <span class="n">table</span><span class="p">;</span>
+  <span class="k">width</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.content</span> <span class="p">{</span>
+  <span class="k">display</span><span class="o">:</span> <span class="k">table-cell</span><span class="p">;</span>
+  <span class="k">border-left</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#d6d6d6</span><span class="p">;</span>
+  <span class="k">border-right</span><span class="o">:</span> <span class="m">1px</span> <span class="k">dotted</span> <span class="m">#D6D6D6</span><span class="p">;</span>
+  <span class="k">padding</span><span class="o">:</span> <span class="m">0</span> <span class="m">20px</span> <span class="m">1em</span> <span class="m">20px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.sidebar</span> <span class="p">{</span>
+  <span class="k">display</span><span class="o">:</span> <span class="k">table-cell</span><span class="p">;</span>
+  <span class="k">width</span><span class="o">:</span> <span class="m">25</span><span class="o">%</span><span class="p">;</span>
+  <span class="k">border-right</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#d6d6d6</span><span class="p">;</span>
+  <span class="k">padding</span><span class="o">:</span> <span class="m">0</span> <span class="m">20px</span> <span class="m">1em</span> <span class="m">20px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>今回興味のある部分を意訳するならば、
+<em> bodyは最低でも740pixelの幅を保つ。
+</em> .wrapper classはその全体を受け取って
+<em> .content classは特にしていないけどtableの1つのセルであり、
+</em> 同様に.sidebarもtableの1つのセルで、幅は25%に指定されている。
+となると思う。</p>
+<p>このように100のうち25がサイドバーなので本文は必ず75%になると思うのだけど、
+先日投稿した記事は主にgistの埋め込みにより横幅がとても広く取られた。
+gistの内容が改行されない程度に本文カラムが拡張されたのである。</p>
+<p>これは思ってた挙動と違う。</p>
+<p>で、数日HTMLとCSS（とGIST）について調べてたら以下の解決策に辿り着いた。</p>
+<script src="https://gist.github.com/geckotang/6535733.js"></script>
+
+<p>ありがたい。</p>
+<p>どうやらブラウザの環境にも依存するらしいけど、table-layoutにfixedを指定しなければいけなかったらしい。
+今回の件でHTMLやCSSに対する基礎知識を得られたし、いい機会だった。</p>	
+
+	</article>
+
+    <p>
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="" data-lang="en" data-size="large" data-related="">Tweet</a>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	</p>
+
+
+		  </div>	
+		  
+		  <div class="sidebar">
+
+	        <nav>
+	          <h2>Categories</h2>
+	          <ul>
+	              <li ><a href="http://yuta1125tp.github.io/category/test.html">test</a></li>
+	              <li ><a href="http://yuta1125tp.github.io/category/python.html">python</a></li>
+	              <li ><a href="http://yuta1125tp.github.io/category/pelican.html">pelican</a></li>
+	              <li class="active"><a href="http://yuta1125tp.github.io/category/css.html">css</a></li>
+	              <li ><a href="http://yuta1125tp.github.io/category/anime.html">anime</a></li>
+	          </ul>
+	        </nav>
+
+	          <aside>
+	          <h2>Social</h2>
+			    <ul class="social">
+				  <li><a href="https://twitter.com/kawa1125tp">Twitter</a><i></i></li>
+				  <li><a href="https://twitter.com/kawa1125bot">Twitter(bot)</a><i></i></li>
+				  <li><a href="http://github.com/yuta1125tp">Github</a><i></i></li>
+			    </ul>
+			  </aside>
+
+	          <aside>
+	            <h2>Blogroll</h2>
+	            <ul>
+	                <li><a href="http://getpelican.com/">Pelican</a></li>
+	                <li><a href="http://python.org/">Python.org</a></li>
+	                <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+	            </ul>
+	          </aside>
+
+		  </div>
+
+	  </div>
+
+      <footer>
+		<p role="contentinfo">
+		  © 2013 Yuta Shirakawa - Proudly powered by <a href="http://alexis.notmyidea.org/pelican/">pelican</a>. Theme <a href="https://github.com/fle/pelican-simplegrey">pelican-simplegrey</a>.
+    	</p>
+
+	  </footer>	
+
+	</div>
+	
+
+</body>
+</html>
