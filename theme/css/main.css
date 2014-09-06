@@ -55,6 +55,11 @@ header {
   width: 100%;
 }
 
+.fixed{
+    position: fixed;
+    top: 20px;
+}
+
 .content {
   display: table-cell;
   border-left: 1px solid #d6d6d6;
