@@ -1,5 +1,5 @@
 $(function($) {
-    var tab = $('.sidebar-container-fixed'),
+    var tab = $('#sidebar-container-fixed'),
     offset = tab.offset();
 
     $(window).scroll(function () {
