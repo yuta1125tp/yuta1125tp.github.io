@@ -37,8 +37,9 @@ body {
   color: #4D4D4C;
   padding: 0;
   min-width: 740px;
-  margin: 0 auto; // add shira
-  width: 80%; // add shira
+  // add shira
+  margin: 0 auto;
+  width: 80%;
 }
 
 header {
