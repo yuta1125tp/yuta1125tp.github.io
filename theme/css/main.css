@@ -10,9 +10,6 @@ Colors :
 /* Imports */
 
 @import url("pygment.css");
-/* @import url("embed.css"); */
-/* @import url("gist.css"); */
-
 
 /* Latout */
 
@@ -55,17 +52,11 @@ header {
   width: 100%;
 }
 
-.fixed{
-    position: fixed;
-    top: 0px;
-    right: 75%;
-}
-
 .content {
   display: table-cell;
   border-left: 1px solid #d6d6d6;
   border-right: 1px dotted #D6D6D6;
-  padding: 0 20px 1em 20px;
+  // padding: 0 20px 1em 20px;
 }
 
 .sidebar {
@@ -73,6 +64,11 @@ header {
   width: 25%;
   border-right: 1px solid #d6d6d6;
   padding: 0 20px 1em 20px;
+}
+
+.fixed{
+    position: fixed;
+    top: 0px;
 }
 
 footer {
