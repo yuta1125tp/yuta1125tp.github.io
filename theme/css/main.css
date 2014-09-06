@@ -37,6 +37,8 @@ body {
   color: #4D4D4C;
   padding: 0;
   min-width: 740px;
+  margin: 0 auto; // add shira
+  width: 80%; // add shira
 }
 
 header {
@@ -311,8 +313,6 @@ li.tag-4 { font-size: 110%; margin: 0 1em; }
 @media (max-width: 979px) {
   body {
     // margin: 0 4%;
-    margin: 0 auto;
-    width: 80%;
   }
 }
 
