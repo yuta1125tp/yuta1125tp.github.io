@@ -298,20 +298,21 @@ li.tag-4 { font-size: 110%; margin: 0 1em; }
 
 @media (min-width: 1280px) {
   body {
-    margin: 0 40%;
-    //margin: 0 16%;
+    // margin: 0 16%;
   }
 }
 
 @media (max-width: 1280px) {
   body {
-    margin: 0 12%;
+    // margin: 0 12%;
   }
 }
 
 @media (max-width: 979px) {
   body {
-    margin: 0 4%;
+    // margin: 0 4%;
+    margin: 0 auto;
+    width: 80%;
   }
 }
 
