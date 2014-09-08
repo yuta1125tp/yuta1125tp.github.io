@@ -62,7 +62,8 @@ header {
 
 .content {
   /* display: table-cell; */
-  margin-right: 150px;
+  float:left;
+    /*margin-right: 150px;*/
   border-left: 1px solid #d6d6d6;
   border-right: 1px dotted #D6D6D6;
   padding: 0 20px 1em 20px;
@@ -72,8 +73,8 @@ header {
   /* display: table-cell; */
   /*width: 150px;*/
   /*float: right;*/
-  float: right; 
-  width: 150px;
+  display:inline-block;
+    width: 150px;
   
   border-right: 1px solid #d6d6d6;
   padding: 0 20px 1em 20px;
