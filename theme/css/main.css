@@ -60,7 +60,7 @@ header {
 
 .content {
   display: table-cell;
-    margin-left: 150px;
+  margin-left: 150px;
   border-left: 1px solid #d6d6d6;
   border-right: 1px dotted #D6D6D6;
   padding: 0 20px 1em 20px;
@@ -69,9 +69,8 @@ header {
 .sidebar {
   display: table-cell;
   /*width: 150px;*/
-  float: left;
-    width: 150px;
-  
+  float: right;
+  width: 150px;
   border-right: 1px solid #d6d6d6;
   padding: 0 20px 1em 20px;
 }
