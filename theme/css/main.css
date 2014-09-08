@@ -53,15 +53,13 @@ header {
 }
 
 .wrapper {
-  /*
   display: table;
   table-layout: fixed;
-  */
   width: 100%;
 }
 
 .content {
-  /* display: table-cell; */
+  display: table-cell;
     margin-left: 150px;
   border-left: 1px solid #d6d6d6;
   border-right: 1px dotted #D6D6D6;
@@ -69,7 +67,7 @@ header {
 }
 
 .sidebar {
-  /* display: table-cell; */
+  display: table-cell;
   /*width: 150px;*/
   float: left;
     width: 150px;
