@@ -22,7 +22,7 @@ header,
 nav,
 section,
 time {
-  /* display: block; */
+  display: block;
 }
 
 html {
@@ -38,9 +38,6 @@ body {
   color: #4D4D4C;
   padding: 0;
   min-width: 740px;
-  position: relative;
-  /* margin: 0 auto;
-  width: 80%; */
 }
 
 header {
@@ -51,27 +48,21 @@ header {
 }
 
 .wrapper {
-  /* display: table; */
-  /* table-layout: fixed; */
+  display: table;
+  table-layout: fixed;
   width: 100%;
 }
 
 .content {
-  /* display: table-cell; */
-  float: right;
-  width; 150px;
-    /*margin-left: 250px;*/
-
+  display: table-cell;
   border-left: 1px solid #d6d6d6;
   border-right: 1px dotted #D6D6D6;
   padding: 0 20px 1em 20px;
 }
 
 .sidebar {
-  float: left;
-  width: 150px;
-  /* display: table-cell; */
-  /* width: 25%; */
+  display: table-cell;
+  width: 25%;
   border-right: 1px solid #d6d6d6;
   padding: 0 20px 1em 20px;
 }
@@ -82,7 +73,6 @@ header {
 }
 
 footer {
-  clear: both;
   border-top: 1px dotted #D6D6D6;
   line-height: 30px;
   padding: 0 1em;
@@ -306,8 +296,7 @@ li.tag-4 { font-size: 110%; margin: 0 1em; }
 }
 
 /* Responsive */
-/* ページの幅によってbodyのmarinを自動で変動させる */
-/*
+
 @media (min-width: 1280px) {
   body {
     margin: 0 16%;
@@ -325,4 +314,4 @@ li.tag-4 { font-size: 110%; margin: 0 1em; }
     margin: 0 4%;
   }
 }
-*/
+
