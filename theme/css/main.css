@@ -11,6 +11,7 @@ Colors :
 
 @import url("pygment.css");
 
+
 /* Latout */
 
 article,
@@ -37,12 +38,6 @@ body {
   color: #4D4D4C;
   padding: 0;
   min-width: 740px;
-  /* add shira */
-  /*
-  margin: 0 auto;
-  width: 80%;
-  position: relative;
-  */
 }
 
 header {
@@ -54,13 +49,11 @@ header {
 
 .wrapper {
   display: table;
-  table-layout: fixed;
   width: 100%;
 }
 
 .content {
   display: table-cell;
-  margin-left: 150px;
   border-left: 1px solid #d6d6d6;
   border-right: 1px dotted #D6D6D6;
   padding: 0 20px 1em 20px;
@@ -68,16 +61,9 @@ header {
 
 .sidebar {
   display: table-cell;
-  /*width: 150px;*/
-  float: right;
-  width: 150px;
+  width: 25%;
   border-right: 1px solid #d6d6d6;
   padding: 0 20px 1em 20px;
-}
-
-.fixed{
-    position: fixed;
-    top: 0px;
 }
 
 footer {
@@ -305,7 +291,6 @@ li.tag-4 { font-size: 110%; margin: 0 1em; }
 
 /* Responsive */
 
-/*
 @media (min-width: 1280px) {
   body {
     margin: 0 16%;
@@ -323,4 +308,4 @@ li.tag-4 { font-size: 110%; margin: 0 1em; }
     margin: 0 4%;
   }
 }
-*/
+
