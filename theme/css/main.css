@@ -67,7 +67,7 @@ header {
   padding: 0 20px 1em 20px;
 }
 
-.fix {
+.fixed {
   position:fixed;
   top:20px;/*固定させたい位置*/
 }
