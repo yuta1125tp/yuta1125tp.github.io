@@ -67,10 +67,13 @@ header {
   padding: 0 20px 1em 20px;
 }
 
+/*
 .fixed {
   position:fixed;
-  top:20px;/*固定させたい位置*/
+  top:20px;
+  //固定させたい位置
 }
+*/
 
 footer {
   border-top: 1px dotted #D6D6D6;
