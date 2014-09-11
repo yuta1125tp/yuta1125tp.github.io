@@ -48,20 +48,20 @@ header {
 }
 
 .wrapper {
-  display: table;
-  table-layout: fixed;
+  // display: table;
+  // table-layout: fixed;
   width: 100%;
 }
 
 .content {
-  display: table-cell;
+  // display: table-cell;
   border-left: 1px solid #d6d6d6;
   border-right: 1px dotted #D6D6D6;
   padding: 0 20px 1em 20px;
 }
 
 .sidebar {
-  display: table-cell;
+  // display: table-cell;
   width: 25%;
   border-right: 1px solid #d6d6d6;
   padding: 0 20px 1em 20px;
