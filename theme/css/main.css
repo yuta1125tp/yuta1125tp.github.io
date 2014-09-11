@@ -22,7 +22,7 @@ header,
 nav,
 section,
 time {
-  display: block;
+  /* display: block; */
 }
 
 html {
