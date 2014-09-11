@@ -36,8 +36,10 @@ body {
   line-height: 150%;
   text-align: left;
   color: #4D4D4C;
-  /* padding: 0; */
+  padding: 0;
   min-width: 740px;
+  margin: 0 auto;
+  width: 80%;
 }
 
 header {
@@ -300,7 +302,8 @@ li.tag-4 { font-size: 110%; margin: 0 1em; }
 }
 
 /* Responsive */
-
+/* ページの幅によってbodyのmarinを自動で変動させる */
+/*
 @media (min-width: 1280px) {
   body {
     margin: 0 16%;
@@ -318,4 +321,4 @@ li.tag-4 { font-size: 110%; margin: 0 1em; }
     margin: 0 4%;
   }
 }
-
+*/
