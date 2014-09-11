@@ -1,6 +1,5 @@
 $(function($) {
-    var tab = $('.sidebar'),
-    offset = tab.offset();
+    var tab = $('.sidebar'), offset = tab.offset();
 
     $(window).scroll(function () {
         if($(window).scrollTop() > offset.top) {
