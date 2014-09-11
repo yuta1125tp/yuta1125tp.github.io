@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>My blog</title><link href="http://yuta1125tp.github.io/" rel="alternate"></link><link href="http://yuta1125tp.github.io/feeds/tesuto.atom.xml" rel="self"></link><id>http://yuta1125tp.github.io/</id><updated>2014-08-27T00:00:00+09:00</updated><entry><title>コードの貼り付け</title><link href="http://yuta1125tp.github.io/paste-code-test.html" rel="alternate"></link><updated>2014-08-27T00:00:00+09:00</updated><author><name>yshirakawa</name></author><id>tag:yuta1125tp.github.io,2014-08-27:paste-code-test.html</id><summary type="html">&lt;p&gt;pelicanの挙動が知りたいのでいろいろ書いてみる。
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Y'log</title><link href="http://yuta1125tp.github.io/" rel="alternate"></link><link href="http://yuta1125tp.github.io/feeds/tesuto.atom.xml" rel="self"></link><id>http://yuta1125tp.github.io/</id><updated>2014-08-27T00:00:00+09:00</updated><entry><title>コードの貼り付け</title><link href="http://yuta1125tp.github.io/paste-code-test.html" rel="alternate"></link><updated>2014-08-27T00:00:00+09:00</updated><author><name>yshirakawa</name></author><id>tag:yuta1125tp.github.io,2014-08-27:paste-code-test.html</id><summary type="html">&lt;p&gt;pelicanの挙動が知りたいのでいろいろ書いてみる。
 今回はコードの貼り付け。&lt;/p&gt;
 &lt;p&gt;コードの書き方がわからないような時、グーグル先生に尋ねるとだいたい何かしらヒントを得られる。
 場合によってはまるまる流用できるようなこともある。&lt;/p&gt;
